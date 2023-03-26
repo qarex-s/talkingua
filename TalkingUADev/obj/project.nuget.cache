@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xLqU1kAPCjLpQPZj8H2iBXZg1ysqgyx4e56ApXEl4JTcVsHhPrdQPfyBeUddV+BuMeBgVE/mn61yP74phRxAUA==",
+  "dgSpecHash": "W5CiafQk+gZxpWChkIRwhiJOY7IKxXAwB190OsJubYi3hqrRcB/hDtlxPe8LJ9OF6HyF8aENQ2/OHOLERBetuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erik\\source\\repos\\TalkingUADev\\TalkingUADev\\TalkingUADev.csproj",
+  "projectFilePath": "C:\\Users\\Erik\\Desktop\\GitProject\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Erik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Erik\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.7\\microsoft.aspnetcore.cryptography.internal.6.0.7.nupkg.sha512",

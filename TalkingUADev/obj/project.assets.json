@@ -2274,11 +2274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erik\\source\\repos\\TalkingUADev\\TalkingUADev\\TalkingUADev.csproj",
+      "projectUniqueName": "C:\\Users\\Erik\\Desktop\\GitProject\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
       "projectName": "TalkingUADev",
-      "projectPath": "C:\\Users\\Erik\\source\\repos\\TalkingUADev\\TalkingUADev\\TalkingUADev.csproj",
+      "projectPath": "C:\\Users\\Erik\\Desktop\\GitProject\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
       "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erik\\source\\repos\\TalkingUADev\\TalkingUADev\\obj\\",
+      "outputPath": "C:\\Users\\Erik\\Desktop\\GitProject\\talkingua\\TalkingUADev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
