@@ -16,3 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+.circular-image {
+    clip-path: circle(30% at center);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5) !important;
+}

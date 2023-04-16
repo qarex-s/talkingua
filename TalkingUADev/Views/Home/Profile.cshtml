@@ -1,1 +1,38 @@
-﻿<h1>Profile</h1>
+﻿@model TalkingUADev.Areas.Identity.Data.UserApp
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="text-center">
+                <img class=" img-fluid circular-image shadow" src="@Model.Image" alt="Image">
+                <div class="d-flex justify-content-center">
+                    <div class="me-4">
+                        <div class="fw-bold">Subs</div>
+                        <div>@Model.CountSubs</div>
+                    </div>
+                    <div class="me-4">
+                        <div class="fw-bold">Follows</div>
+                        <div>@Model.CountFollows</div>
+                    </div>
+                    <div>
+                        <div class="fw-bold">Posts</div>
+                        <div>@Model.CountPosts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="mb-3">
+                <div class="fw-bold">Date of Birth:</div>
+                <div>@Model.DateBirthd</div>
+            </div>
+            <div class="mb-3">
+                <div class="fw-bold">City:</div>
+                <div>@Model.City</div>
+            </div>
+            <div class="mb-3">
+                <div class="fw-bold">Date of Creating:</div>
+                <div>@Model.DateOfCreateUser</div>
+            </div>
+        </div>
+    </div>
+</div>
