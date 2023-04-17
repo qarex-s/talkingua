@@ -10465,11 +10465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erik\\Desktop\\talkingHub\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
+      "projectUniqueName": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
       "projectName": "TalkingUADev",
-      "projectPath": "C:\\Users\\Erik\\Desktop\\talkingHub\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
+      "projectPath": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
       "packagesPath": "C:\\Users\\Erik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erik\\Desktop\\talkingHub\\talkingua\\TalkingUADev\\obj\\",
+      "outputPath": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

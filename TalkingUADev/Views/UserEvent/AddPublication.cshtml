@@ -1,0 +1,38 @@
+﻿@using TalkingUADev.ViewModels
+@model ModelPost
+<div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" action="AddPublication" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="Image" class="form-control" aria-required="true" />
+                <label asp-for="Image"></label>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Name" class="form-control"  aria-required="true" />
+                <label asp-for="Name"></label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Desc" class="form-control" aria-required="true" />
+                <label asp-for="Desc"></label>
+                <span asp-validation-for="Desc" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Position" class="form-control" aria-required="true" />
+                <label asp-for="Position"></label>
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Tags" class="form-control" aria-required="true" />
+                <label asp-for="Tags"></label>
+                <span asp-validation-for="Tags" class="text-danger"></span>
+            </div>
+
+
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+</div>

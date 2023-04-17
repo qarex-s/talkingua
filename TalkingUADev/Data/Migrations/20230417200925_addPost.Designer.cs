@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalkingUADev.Data;
 
@@ -11,9 +12,10 @@ using TalkingUADev.Data;
 namespace TalkingUADev.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230417200925_addPost")]
+    partial class addPost
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -286,9 +288,11 @@ namespace TalkingUADev.Data.Migrations
 
                     b.Property<string>("UserAppId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("UserPostId");
+
+                    b.HasIndex("UserAppId");
 
                     b.ToTable("Posts");
                 });
@@ -342,6 +346,20 @@ namespace TalkingUADev.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.UserPost", b =>
+                {
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", null)
+                        .WithMany("posts")
+                        .HasForeignKey("UserAppId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TalkingUADev.Areas.Identity.Data.UserApp", b =>
+                {
+                    b.Navigation("posts");
                 });
 #pragma warning restore 612, 618
         }

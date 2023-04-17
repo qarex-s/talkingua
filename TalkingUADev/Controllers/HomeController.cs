@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using TalkingUADev.Areas.Identity.Data;
 using TalkingUADev.Data;
 using TalkingUADev.Models;
+using TalkingUADev.Util;
 
 namespace TalkingUADev.Controllers
 {
@@ -29,7 +31,24 @@ namespace TalkingUADev.Controllers
         public IActionResult Profile()
         {
             UserApp _user = _context.Users.Where(x=>x.Id ==  _userManager.GetUserId(User)).FirstOrDefault();
-            return View(_user);
+            List < UserPost> _userPosts = _context.Posts.Where(x=>x.UserAppId == _user.Id.ToString()).ToList();
+            _user.CountPosts = _userPosts.Count();
+
+            UtilUserPost utilUserAndPost = new UtilUserPost();
+
+            utilUserAndPost.SetUserAppUtil(_user);
+            utilUserAndPost.SetUserPostsUtil(_userPosts);
+            
+            return View(utilUserAndPost);
+        }
+        public IActionResult GetPublication(Guid?Id)
+        {
+            if (Id == null)
+            {
+                return NotFound();
+            }
+            UserPost userPost = _context.Posts.FirstOrDefault(x => x.UserPostId == Id);
+            return View(userPost);  
         }
         public IActionResult Privacy()
         {

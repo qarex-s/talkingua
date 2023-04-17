@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using TalkingUADev.Models;
 
 namespace TalkingUADev.Areas.Identity.Data;
 
@@ -19,6 +20,8 @@ public class UserApp : IdentityUser
     public int CountSubs { get; set; } = 0;
     public int CountFollows { get; set; } = 0;
     public int CountPosts { get; set; } = 0;
+
+    public List<UserPost> posts = new List<UserPost>();
 
     
 }
