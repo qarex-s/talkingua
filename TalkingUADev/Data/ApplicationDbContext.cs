@@ -12,5 +12,6 @@ namespace TalkingUADev.Data
         {
         }
        public DbSet<UserPost> Posts { get; set; }
+       public DbSet<FollowUser> followUsers { get; set; }
     }
 }

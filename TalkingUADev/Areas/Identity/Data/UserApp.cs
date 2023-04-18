@@ -22,6 +22,8 @@ public class UserApp : IdentityUser
     public int CountPosts { get; set; } = 0;
 
     public List<UserPost> posts = new List<UserPost>();
+    
+    public List<FollowUser> followUsers = new List<FollowUser>();
 
     
 }

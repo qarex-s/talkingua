@@ -4,7 +4,11 @@
     <div class="row justify-content-center">
         <div class="col-lg-4">
             <div class="text-center">
-                <img class=" img-fluid circular-image shadow" src="@Model.GetUserAppUtil().Image" alt="Image">
+                <img class="circular-image circular-image-large shadow" src="@Model.GetUserAppUtil().Image" alt="Image">
+                <h3 class="card-text2">@Model.GetUserAppUtil().Name</h3> <!-- Добавленный код -->
+
+                <hr class="my-4">
+
                 <div class="d-flex justify-content-center">
                     <div class="me-4">
                         <div class="fw-bold">Subs</div>
@@ -20,25 +24,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="mb-3">
-                <div class="fw-bold">Date of Birth:</div>
-                <div>@Model.GetUserAppUtil().DateBirthd</div>
-            </div>
-            <div class="mb-3">
-                <div class="fw-bold">City:</div>
-                <div>@Model.GetUserAppUtil().City</div>
-            </div>
-            <div class="mb-3">
-                <div class="fw-bold">Date of Creating:</div>
-                <div>@Model.GetUserAppUtil().DateOfCreateUser</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+    </div>
 
-            @if (Model.GetUserPostUtil() != null)
+</div>
+
+<hr class="my-5">
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+        @{
+            if (Model.GetUserPostUtil().Count >= 1)
+            {
                 @foreach (UserPost item in Model.GetUserPostUtil())
                 {
                     <div class="col">
@@ -48,15 +43,19 @@
                                 <h5 class="card-title">@item.Name</h5>
                                 <p class="card-text">Description: @item.Desc</p>
                                 <p class="card-text">Likes: @item.Likes</p>
-                                    <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
-
+                                <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Добавьте дополнительные карточки публикаций сюда -->
-            }
-            </div>
+                }
 
-        </div>
+            }
+            else
+            {
+                <h3>Add some posts</h3>
+            }
+        }
+
     </div>
+
 </div>

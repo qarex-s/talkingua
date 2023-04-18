@@ -1,0 +1,67 @@
+﻿@model TalkingUADev.Util.UtilUserPost
+@using TalkingUADev.Models
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <form action="FollowToUser" method="post">
+
+            <div class="text-center">
+                <img class="circular-image circular-image-large shadow" src="@Model.GetUserAppUtil().Image" alt="Image">
+                <hr class="my-4">
+
+                    <div class="d-flex justify-content-center">
+                        <div class="me-4">
+                            <div class="fw-bold">Subs</div>
+                            <div>@Model.GetUserAppUtil().CountSubs</div>
+                        </div>
+                        <div class="me-4">
+                            <div class="fw-bold">Follows</div>
+                            <div>@Model.GetUserAppUtil().CountFollows</div>
+                        </div>
+                        <div>
+                            <div class="fw-bold">Posts</div>
+                            <div>@Model.GetUserAppUtil().CountPosts</div>
+                        </div>
+                        <input type="hidden" name="userId" value="@Model.GetUserAppUtil().Id" />                   
+            </div>
+                    @{
+                        if (!Model.GetUserIsFollowed())
+                        {
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class="btn btn-primary">Follow</button>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class="btn btn-danger">UnFollow</button>
+                            </div>
+                        }
+                    }
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <hr class="my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @if (Model.GetUserPostUtil() != null)
+        {
+            @foreach (UserPost item in Model.GetUserPostUtil())
+            {
+                <div class="col">
+                    <div class="card">
+                        <img src="@item.Image" class="card-img-top" alt="@item.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text">Description: @item.Desc</p>
+                            <p class="card-text">Likes: @item.Likes</p>
+                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

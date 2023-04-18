@@ -1,7 +1,33 @@
 ﻿@{
     ViewData["Title"] = "News Page";
 }
+@model List<TalkingUADev.Models.UserPost>
+<div class="container my-5">
+    @{
+        if (Model.Count() < 1)
+        {
+            <h3 class="card-text">You need to subscribe to someone</h3>
+        }
+        else
+        {
+            <div class="row row-cols-1 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        @foreach (UserPost post in Model)
+                        {
+                            <img src="@post.Image" class="card-img-top" alt="photo: @post.Name">
+                            <div class="card-body">
+                                <h5 class="card-title">@post.Name</h5>
+                                <p class="card-text">@post.Desc</p>
+                                <p class="card-text"><small class="text-muted">@post.Tags</small></p>
+                                <p class="card-text"><small class="text-muted">Date: @post.DateOfCreatingPost</small></p>
+                            </div>
+                        }
 
-<div class="text-center">
-    <h1 class="display-4">News</h1>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    
 </div>

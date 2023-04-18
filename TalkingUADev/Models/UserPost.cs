@@ -15,6 +15,7 @@ namespace TalkingUADev.Models
         public string Position { get; set; }
         public int Likes { get; set; } = 0;
         public string UserAppId { get; set; }
+        public DateTime DateOfCreatingPost { get; set; }= DateTime.Now;
 
     }
 }

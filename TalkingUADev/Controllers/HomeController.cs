@@ -25,15 +25,18 @@ namespace TalkingUADev.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var followedUsers = _context.followUsers.Where(x=>x.UserId == _userManager.GetUserId(User) && x.isFollowed).Select(x=>x.FollowerId).ToList();
+            List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).OrderBy(x=>x.DateOfCreatingPost).ToList();
+            return View(foolowedUsersPost);
         }
         [Authorize]
-        public IActionResult Profile()
+        public async Task<IActionResult> ProfileAsync()
         {
             UserApp _user = _context.Users.Where(x=>x.Id ==  _userManager.GetUserId(User)).FirstOrDefault();
             List < UserPost> _userPosts = _context.Posts.Where(x=>x.UserAppId == _user.Id.ToString()).ToList();
-            _user.CountPosts = _userPosts.Count();
-
+            _user.CountPosts = _userPosts.Count;
+            _user.posts = _userPosts;
+            await _userManager.UpdateAsync(_user);
             UtilUserPost utilUserAndPost = new UtilUserPost();
 
             utilUserAndPost.SetUserAppUtil(_user);

@@ -30,3 +30,16 @@ body {
 .card-img-top {
     filter: brightness(70%);
 }
+.circular-image-large {
+    width: 200px;
+    height: 200px;
+}
+
+    .circular-image-large img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.card-body2 {
+    padding: 1rem; 
+}
