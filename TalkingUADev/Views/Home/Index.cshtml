@@ -10,6 +10,7 @@
         }
         else
         {
+            
             <div class="row row-cols-1 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -22,11 +23,13 @@
                                 <p class="card-text"><small class="text-muted">@post.Tags</small></p>
                                 <p class="card-text"><small class="text-muted">Date: @post.DateOfCreatingPost</small></p>
                             </div>
+                            <a href="@Url.Action("GetPublication", "Home", new {Id = post.UserPostId})" class="btn btn-primary">View</a>
                         }
 
                     </div>
                 </div>
-            </div>
+            </div><br /><br />
+            <hr />
         }
     }
     

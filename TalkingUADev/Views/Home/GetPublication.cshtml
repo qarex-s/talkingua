@@ -1,14 +1,19 @@
-﻿@model TalkingUADev.Models.UserPost
+﻿@model TalkingUADev.Util.UtilPostLike
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <img src="@Model.Image" class=" card-img-top shadow" alt="Responsive image" />
+    <form method="get" action="/UserEvent/LikePost">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@Model.userPost.Image" class="card-img-top shadow" alt="Responsive image" />
+            </div>
+            <div class="col-md-8">
+                <h5 class="card-title fs-5">@Model.userPost.Name</h5>
+                <p class="card-title fs-6">@Model.userPost.Desc</p>
+                <p class="card-title fs-6">Tags: @Model.userPost.Tags</p>
+                <p class="card-title fs-6">Likes: @Model.userPost.Likes</p>
+            </div>
         </div>
-        <div class="col-md-8">
-            <h5 class="card-title fs-5">@Model.Name</h5>
-            <p class="card-title fs-6">@Model.Desc</p>
-            <p class ="card-title fs-6">Tags: @Model.Tags</p>
-            <p class="card-title fs-6">Likes: @Model.Likes</p>
-        </div>
-    </div>
+        <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
+        <button type="submit" class="btn btn-success">Like</button>
+    </form>
+
 </div>

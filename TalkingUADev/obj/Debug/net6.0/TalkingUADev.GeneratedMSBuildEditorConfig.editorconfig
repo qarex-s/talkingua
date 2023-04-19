@@ -52,12 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/IndexDev.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleERldi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/ProfileDev.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlRGV2LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/Error.cshtml]
@@ -78,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/SearchUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XFNlYXJjaFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/ViewLikedPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XFZpZXdMaWtlZFBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/ViewProfileUser.cshtml]

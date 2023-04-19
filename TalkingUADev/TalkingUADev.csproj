@@ -20,7 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Img\" />
+    <Folder Include="wwwroot\MyStyle\css\" />
+    <Folder Include="wwwroot\MyStyle\script\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\styleMyStyle.css" />
+    <None Include="wwwroot\js\scriptMyScript.js" />
   </ItemGroup>
 
 </Project>

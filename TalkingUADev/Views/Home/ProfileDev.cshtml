@@ -1,0 +1,59 @@
+﻿@model TalkingUADev.Util.UtilUserPost
+@using TalkingUADev.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styleMyStyle.css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="head">
+                <div class="nick">
+                    <img src="@Model.GetUserAppUtil().Image" alt="Photo: @Model.GetUserAppUtil().Name">
+                    <p></p>
+                </div>
+                <div class="info">
+                    <div class="subscribes">
+                        <p>@Model.GetUserAppUtil().CountSubs</p>
+                        <p>Підписок</p>
+                    </div>
+                    <div class="reader">
+                        <p>@Model.GetUserAppUtil().CountFollows</p>
+                        <p>Підписників</p>
+                    </div>
+                    <div class="count-post">
+                        <p id="posts_count">@Model.GetUserAppUtil().CountPosts</p>
+                        <p>Публікації</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="posts">
+                @foreach (var item in Model.GetUserPostUtil())
+                {
+                    <div class="post">
+                        <img src="@item.Image" alt="Post">
+                    </div>
+                }
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="~/js/scriptMyScript.js"></script>
+</body>
+
+</html>

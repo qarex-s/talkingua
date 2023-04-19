@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using TalkingUADev.Areas.Identity.Data;
 using TalkingUADev.Data;
 using TalkingUADev.Models;
@@ -26,7 +28,7 @@ namespace TalkingUADev.Controllers
         [Authorize]
         public IActionResult AddPublication()
         {
-            return View();
+             return View();
         }
         [HttpPost]
         [Authorize]
@@ -45,17 +47,17 @@ namespace TalkingUADev.Controllers
 
             };
             UserApp someUser = await _user.GetUserAsync(User);//thx this meth we can change some prop of UserApp which extends IdentityUser
-            _context.Posts.Add(tempUserPost);
-            _context.SaveChangesAsync();
+            await _context.Posts.AddAsync(tempUserPost);
+            await _context.SaveChangesAsync();
             someUser.posts.Add(tempUserPost);
             someUser.CountPosts = _context.Posts.Count();
-            _user.UpdateAsync(someUser);
+            await _user.UpdateAsync(someUser);
 
             return RedirectToAction("Index", "Home");
         }
         [HttpGet]
         [Authorize]
-        public async Task<IActionResult> SearchUsers()
+        public IActionResult SearchUsers()
         {
             return View();
         }
@@ -63,23 +65,35 @@ namespace TalkingUADev.Controllers
         [Authorize]
         public async Task<IActionResult> SearchUsers(string UserName)
         {
-            var user = _user.Users.Where(x => x.Name == UserName).FirstOrDefault();
+            var user = await _user.Users.Where(x => x.Name == UserName).FirstOrDefaultAsync();
             if (user != null)
             {
                 return View(user);
             }
-            return View();
+            return  View();
         }
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> ViewProfileUser(string userId)
         {
             UtilUserPost utilUserPost = new UtilUserPost();
-            utilUserPost.SetAll(_user.Users.Where(x => x.Id == userId).FirstOrDefault(),
+            var UserGet = await _user.Users.Where(x => x.Id == userId).FirstOrDefaultAsync();
+            if(UserGet != null)
+            {
+                utilUserPost.SetAll(UserGet,
             _context.Posts.Where(x => x.UserAppId == userId).ToList());
-            var FollowerOrNot = _context.followUsers.Where(x => x.FollowerId == userId && x.UserId == _user.GetUserId(User)).FirstOrDefault();
-            if (FollowerOrNot != null)
-                utilUserPost.SetUserIsFollowed(FollowerOrNot.isFollowed);
+
+                var FollowerOrNot = await _context.followUsers.Where(x => x.FollowerId == userId && x.UserId == _user.GetUserId(User)).FirstOrDefaultAsync();
+                if (FollowerOrNot != null)
+                    utilUserPost.SetUserIsFollowed(FollowerOrNot.isFollowed);
+            }
+            else
+            {
+                //HERE WILL BE PAGE OF ERRORS
+                return RedirectToAction("Privacy");
+            }
+            
+            
 
             return View(utilUserPost);
         }
@@ -122,5 +136,57 @@ namespace TalkingUADev.Controllers
 
             return RedirectToAction("ViewProfileUser", "UserEvent", new { userId });
         }
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> LikePost(string postId)
+        {
+            var LikeUserTemp = await _context.likesUsers.Where(x=>x.PostId == postId && x.UserId == _user.GetUserId(User)).FirstOrDefaultAsync();
+            if(LikeUserTemp == null)
+            {
+                LikeUserTemp = new LikeUser();
+                LikeUserTemp.UserId = _user.GetUserId(User);
+                LikeUserTemp.PostId = postId;
+                LikeUserTemp.isLiked = true;
+
+                await _context.likesUsers.AddAsync(LikeUserTemp);
+
+            }
+            else 
+            {
+                if (LikeUserTemp.isLiked)
+                    LikeUserTemp.isLiked = false;
+                else
+                    LikeUserTemp.isLiked = true;
+
+            }
+            await _context.SaveChangesAsync();
+
+            var post = await _context.Posts.Where(x=>x.UserPostId.ToString() == postId).FirstOrDefaultAsync();
+            if(post !=null)
+                post.Likes = _context.likesUsers.Where(x=>x.PostId == postId && x.isLiked == true).ToList().Count();
+            else
+                return RedirectToAction("Privacy","Home");//PAGE ERRORS
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("GetPublication","Home",new { Id = postId});
+        }
+
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> ViewLikedPost()
+        {
+            
+            var user = await _user.GetUserAsync(User);
+            var postsId = _context.likesUsers.Where(x => x.UserId == user.Id && x.isLiked).Select(x=>x.PostId).ToList();
+             
+            return View(_context.Posts.Where(x => postsId.Contains(x.UserPostId.ToString())).ToList());
+        }
+
+
+
     }
+
+
 }

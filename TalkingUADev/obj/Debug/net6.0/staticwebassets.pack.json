@@ -5,6 +5,42 @@
       "PackagePath": "staticwebassets\\TalkingUADev.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Avatar.png",
+      "PackagePath": "staticwebassets\\Img\\Avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 10.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 10.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 11.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 11.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 12.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 12.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 13.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 13.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 14.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 14.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 15.png",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 15.png"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 16.jpg",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 17.gif",
+      "PackagePath": "staticwebassets\\Img\\Rectangle 17.gif"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg",
       "PackagePath": "staticwebassets\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg"
     },
@@ -13,8 +49,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleMyStyle.css",
+      "PackagePath": "staticwebassets\\css\\styleMyStyle.css"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
+      "PackagePath": "staticwebassets\\js\\scriptMyScript.js"
     },
     {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\site.js",

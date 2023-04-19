@@ -16,6 +16,8 @@ namespace TalkingUADev.Models
         public int Likes { get; set; } = 0;
         public string UserAppId { get; set; }
         public DateTime DateOfCreatingPost { get; set; }= DateTime.Now;
+        public List<LikeUser> likes = new List<LikeUser>();
+
 
     }
 }

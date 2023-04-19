@@ -30,31 +30,33 @@
 
 <hr class="my-5">
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-        @{
-            if (Model.GetUserPostUtil().Count >= 1)
-            {
-                @foreach (UserPost item in Model.GetUserPostUtil())
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            @{
+                if (Model.GetUserPostUtil().Count >= 1)
                 {
-                    <div class="col">
-                        <div class="card">
-                            <img src="@item.Image" class="card-img-top" alt="@item.Name">
-                            <div class="card-body">
-                                <h5 class="card-title">@item.Name</h5>
-                                <p class="card-text">Description: @item.Desc</p>
-                                <p class="card-text">Likes: @item.Likes</p>
-                                <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
+                    @foreach (UserPost item in Model.GetUserPostUtil())
+                    {
+                        <div class="col">
+                            <div class="card">
+                                <img src="@item.Image" class="card-img-top" alt="@item.Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">@item.Name</h5>
+                                    <p class="card-text">Description: @item.Desc</p>
+                                    <p class="card-text">Likes: @item.Likes</p>
+                                    <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
+                                </div>
+                                
                             </div>
                         </div>
-                    </div>
-                }
+                    }
 
+                }
+                else
+                {
+                    <h3>Add some posts</h3>
+                }
             }
-            else
-            {
-                <h3>Add some posts</h3>
-            }
-        }
 
     </div>
 
