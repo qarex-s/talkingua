@@ -1,4 +1,4 @@
-﻿@model TalkingUADev.Areas.Identity.Data.UserApp
+﻿@model List<TalkingUADev.Areas.Identity.Data.UserApp>
 <div class="container">
     <div class="row justify-content-center my-5">
         <div class="col-md-6">
@@ -11,34 +11,36 @@
         </div>
     </div>
     <div class="row justify-content-center my-5">
-        <div class="col-md-6">
-            <ul class="list-group">
-                @if (Model != null)
-                {
-                    <form id="search-form" method="get" action="ViewProfileUser">
-                    <div class="list-group-item list-group-item-action">
-                        <div class="row align-items-center">
-                            <div class="col-md-3">
-                                <img src="@Model.Image" alt="Photo: @Model.Name" class="img-thumbnail">
-                            </div>
-                            <div class="col-md-9">
-                                <h5 class="mb-0">Email: @Model.Email</h5>
-                                <p class="mb-0">Full name: @Model.FullName</p>
-                                <p class="mb-0">Subs: @Model.CountSubs</p>
-                                <p class="mb-0">Posts: @Model.CountPosts</p>
-                                <input type="hidden" name="userId" value="@Model.Id"/>
-                                <button type="submit" class="btn btn-primary" form="search-form">View Profile</button>
+        @if (Model != null)
+        {
+            <div class="col-md-6">
+                <ul class="list-group">
+                    @foreach (var userItem in Model)
+                    {
+                        <div class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
 
+                                <div class="col-md-3">
+                                    <img src="@userItem.Image" alt="Photo: @userItem.Name" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5 class="mb-0">Email: @userItem.Email</h5>
+                                    <p class="mb-0">Full name: @userItem.FullName</p>
+                                    <p class="mb-0">Subs: @userItem.CountSubs</p>
+                                    <p class="mb-0">Posts: @userItem.CountPosts</p>
+                                    <a href="/UserEvent/ViewProfileUser?userId=@userItem.Id" class="btn btn-primary">View profile</a>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    </form>
-                }else{
-                    <li class="list-group-item">User is not found</li>
-                }
-             
-            </ul>
-        </div>
+                    }
+                </ul>
+            </div>
+        }
+        else
+        {
+            <li class="list-group-item">User is not found</li>
+        }
+
     </div>
 </div>

@@ -65,10 +65,10 @@ namespace TalkingUADev.Controllers
         [Authorize]
         public async Task<IActionResult> SearchUsers(string UserName)
         {
-            var user = await _user.Users.Where(x => x.Name == UserName).FirstOrDefaultAsync();
-            if (user != null)
+            var users =  await _user.Users.Where(x => x.Name.Contains(UserName) ).ToListAsync();
+            if (users != null)
             {
-                return View(user);
+                return View(users);
             }
             return  View();
         }
@@ -171,6 +171,34 @@ namespace TalkingUADev.Controllers
 
             return RedirectToAction("GetPublication","Home",new { Id = postId});
         }
+
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> GetMySubscribers()
+        {
+            UserApp user = await _user.GetUserAsync(User);
+            
+            var subs =  _context.followUsers.Where(x=>x.FollowerId == user.Id && x.isFollowed).Select(x=>x.UserId);
+            if (subs != null)
+            {
+                return View(_user.Users.Where(x => subs.Contains(x.Id)).ToList());
+            }
+            return View();
+        }
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> GetMyFollowers()
+        {
+            UserApp user = await _user.GetUserAsync(User);
+
+            var followers = _context.followUsers.Where(x => x.UserId == user.Id && x.isFollowed).Select(x => x.FollowerId);
+            if (followers != null)
+            {
+                return View(_user.Users.Where(x => followers.Contains(x.Id)).ToList());
+            }
+            return View();
+        }
+
 
 
         [HttpGet]
