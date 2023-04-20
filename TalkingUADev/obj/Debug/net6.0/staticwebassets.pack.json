@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\MyValidScript.js",
+      "PackagePath": "staticwebassets\\js\\MyValidScript.js"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
       "PackagePath": "staticwebassets\\js\\scriptMyScript.js"
     },

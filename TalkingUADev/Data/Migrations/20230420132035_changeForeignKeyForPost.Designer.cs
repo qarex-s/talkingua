@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalkingUADev.Data;
 
@@ -11,9 +12,10 @@ using TalkingUADev.Data;
 namespace TalkingUADev.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230420132035_changeForeignKeyForPost")]
+    partial class changeForeignKeyForPost
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -314,9 +316,6 @@ namespace TalkingUADev.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("DateOfCreatingComment")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("FromUserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -438,7 +437,7 @@ namespace TalkingUADev.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("TalkingUADev.Models.UserPost", "post")
-                        .WithMany()
+                        .WithMany("comments")
                         .HasForeignKey("ToPostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -446,6 +445,11 @@ namespace TalkingUADev.Data.Migrations
                     b.Navigation("post");
 
                     b.Navigation("userApp");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.UserPost", b =>
+                {
+                    b.Navigation("comments");
                 });
 #pragma warning restore 612, 618
         }

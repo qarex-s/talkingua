@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace TalkingUADev.Models
         public string UserAppId { get; set; }
         public DateTime DateOfCreatingPost { get; set; }= DateTime.Now;
         public List<LikeUser> likes = new List<LikeUser>();
+        public List<UserComment> comments = new List<UserComment>();
+
 
 
     }

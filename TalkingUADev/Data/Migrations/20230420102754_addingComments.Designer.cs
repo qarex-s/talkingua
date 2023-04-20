@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TalkingUADev.Data;
 
@@ -11,9 +12,10 @@ using TalkingUADev.Data;
 namespace TalkingUADev.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230420102754_addingComments")]
+    partial class addingComments
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -314,25 +316,20 @@ namespace TalkingUADev.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("DateOfCreatingComment")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("FromUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("TextMessage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("ToPostId")
+                    b.Property<string>("ToPostId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("UserPostId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FromUserId");
-
-                    b.HasIndex("ToPostId");
+                    b.HasIndex("UserPostId");
 
                     b.ToTable("commentsUsers");
                 });
@@ -431,21 +428,14 @@ namespace TalkingUADev.Data.Migrations
 
             modelBuilder.Entity("TalkingUADev.Models.UserComment", b =>
                 {
-                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "userApp")
-                        .WithMany()
-                        .HasForeignKey("FromUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("TalkingUADev.Models.UserPost", null)
+                        .WithMany("comments")
+                        .HasForeignKey("UserPostId");
+                });
 
-                    b.HasOne("TalkingUADev.Models.UserPost", "post")
-                        .WithMany()
-                        .HasForeignKey("ToPostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("post");
-
-                    b.Navigation("userApp");
+            modelBuilder.Entity("TalkingUADev.Models.UserPost", b =>
+                {
+                    b.Navigation("comments");
                 });
 #pragma warning restore 612, 618
         }

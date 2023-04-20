@@ -81,7 +81,9 @@ namespace TalkingUADev.Controllers
             if(UserGet != null)
             {
                 utilUserPost.SetAll(UserGet,
-            _context.Posts.Where(x => x.UserAppId == userId).ToList());
+                await _context.Posts.Where(x => x.UserAppId == userId)
+                .OrderByDescending(x=>x.DateOfCreatingPost)
+                .ToListAsync());
 
                 var FollowerOrNot = await _context.followUsers.Where(x => x.FollowerId == userId && x.UserId == _user.GetUserId(User)).FirstOrDefaultAsync();
                 if (FollowerOrNot != null)
@@ -199,6 +201,34 @@ namespace TalkingUADev.Controllers
             return View();
         }
 
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> WriteComment(Guid postId,string textMessage)
+        {
+            UserComment userComment = new UserComment();
+            var user = await _user.GetUserAsync(User);
+            var choosedPost = await _context.Posts.Where(x => x.UserPostId == postId).FirstAsync();
+            if (user!=null)
+            {
+                userComment.FromUserId = user.Id;
+                userComment.ToPostId = postId;
+                userComment.TextMessage = textMessage;
+                userComment.userApp = user;
+                userComment.post = choosedPost;
+                string formatDate = userComment.DateOfCreatingComment.ToString("dd/MM/yy/HH/mm");
+                
+                await _context.commentsUsers.AddAsync(userComment);
+
+                await _context.SaveChangesAsync();
+                return RedirectToAction("GetPublication","Home",new { Id = postId});
+
+            }
+            else
+            {
+                return RedirectToAction("Privacy", "Home");
+            }
+        }
+
 
 
         [HttpGet]
@@ -207,9 +237,9 @@ namespace TalkingUADev.Controllers
         {
             
             var user = await _user.GetUserAsync(User);
-            var postsId = _context.likesUsers.Where(x => x.UserId == user.Id && x.isLiked).Select(x=>x.PostId).ToList();
+            var postsId =await  _context.likesUsers.Where(x => x.UserId == user.Id && x.isLiked).Select(x=>x.PostId).ToListAsync();
              
-            return View(_context.Posts.Where(x => postsId.Contains(x.UserPostId.ToString())).ToList());
+            return View(await _context.Posts.Where(x => postsId.Contains(x.UserPostId.ToString())).OrderByDescending(x=>x.DateOfCreatingPost).ToListAsync());
         }
 
 

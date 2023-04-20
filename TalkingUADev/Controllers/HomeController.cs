@@ -26,14 +26,14 @@ namespace TalkingUADev.Controllers
         public IActionResult Index()
         {
             var followedUsers = _context.followUsers.Where(x=>x.UserId == _userManager.GetUserId(User) && x.isFollowed).Select(x=>x.FollowerId).ToList();
-            List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).OrderBy(x=>x.DateOfCreatingPost).ToList();
+            List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).OrderByDescending(x=>x.DateOfCreatingPost).ToList();
             return View(foolowedUsersPost);
         }
         [Authorize]
         public async Task<IActionResult> ProfileAsync()
         {
-            UserApp _user = _context.Users.Where(x=>x.Id ==  _userManager.GetUserId(User)).FirstOrDefault();
-            List < UserPost> _userPosts = _context.Posts.Where(x=>x.UserAppId == _user.Id.ToString()).ToList();
+            UserApp _user = _context.Users.Where(x=>x.Id ==  _userManager.GetUserId(User)).First();
+            List < UserPost> _userPosts = _context.Posts.Where(x=>x.UserAppId == _user.Id.ToString()).OrderByDescending(x=>x.DateOfCreatingPost).ToList();
             _user.CountPosts = _userPosts.Count;
             _user.posts = _userPosts;
             await _userManager.UpdateAsync(_user);
@@ -57,8 +57,22 @@ namespace TalkingUADev.Controllers
             else
             {
                 UtilPostLike postLike = new UtilPostLike();
-                postLike.userPost = await _context.Posts.FirstOrDefaultAsync(x => x.UserPostId == Id);
-                postLike.userLike = _context.likesUsers.Where(x => x.PostId == Id.ToString() && x.isLiked).ToList();
+                postLike.userPost = await _context.Posts
+                    .FirstAsync(x => x.UserPostId == Id);
+
+                postLike.userLike = await _context.likesUsers
+                    .Where(x => x.PostId == Id.ToString() && x.isLiked)
+                    .ToListAsync();
+                List<UserComment> postCommented = await _context.commentsUsers
+                    .Where(x => x.ToPostId == Id)
+                    .ToListAsync();
+
+                postLike.postComments = postCommented;
+                List<string> usersId =  postCommented.Select(x=>x.FromUserId).ToList();
+                postLike.usersComments = await _userManager.Users
+                    .Where(x=> usersId.Contains(x.Id))
+                    .ToListAsync();
+                postLike.postComments = postLike.postComments.OrderByDescending(x=>x.DateOfCreatingComment).ToList();
                 return View(postLike);
 
             }

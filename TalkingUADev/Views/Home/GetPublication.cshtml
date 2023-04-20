@@ -1,19 +1,56 @@
 ﻿@model TalkingUADev.Util.UtilPostLike
+
 <div class="container">
-    <form method="get" action="/UserEvent/LikePost">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="@Model.userPost.Image" class="card-img-top shadow" alt="Responsive image" />
-            </div>
-            <div class="col-md-8">
-                <h5 class="card-title fs-5">@Model.userPost.Name</h5>
-                <p class="card-title fs-6">@Model.userPost.Desc</p>
-                <p class="card-title fs-6">Tags: @Model.userPost.Tags</p>
-                <p class="card-title fs-6">Likes: @Model.userPost.Likes</p>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <img src="@Model.userPost.Image" class="img-fluid shadow-lg rounded" alt="Responsive image" />
+        </div>
+        <div class="col-md-8">
+            <h5 class="card-title fs-5">Publication: @Model.userPost.Name</h5>
+            <p class="card-title fs-6">Description: @Model.userPost.Desc</p>
+            <p class="card-title fs-6">Tags: @Model.userPost.Tags</p>
+            <p class="card-title fs-6">Posted: @Model.userPost.DateOfCreatingPost</p>
+            <div class="d-flex align-items-center mb-3">
+                <form method="get" action="/UserEvent/LikePost">
+                    <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
+                    <button type="submit" class="btn btn-success me-2">
+                        <i class="bi bi-hand-thumbs-up"></i> Like
+                    </button>
+                </form>
+                <span class="fs-6 me-2">@Model.userPost.Likes</span>
             </div>
         </div>
-        <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
-        <button type="submit" class="btn btn-success">Like</button>
-    </form>
-
+    </div>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h6>Comments:</h6>
+            <ul class="list-unstyled">
+               
+                @foreach (var comment in Model.postComments)
+                {
+                    <li class="media mb-3">
+                        <img src="@comment.userApp.Image" class="mr-3 rounded-circle" alt="photo: @comment.userApp.FullName" style="width:50px; height:50px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1"><a href="/UserEvent/ViewProfileUser?userId=@comment.userApp.Id">@comment.userApp.Name</a></h5>
+                            @comment.TextMessage
+                            <h6 class="mt-3">Date: @comment.DateOfCreatingComment.ToString("dd/MM/yyyy/HH:mm:ss")</h6>
+                        </div>
+                    </li>
+                    <hr class="comment-divider" />
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+            <form onsubmit="return validateForm();" method="post" action="/UserEvent/WriteComment">
+                <div class="mb-3">
+                    <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
+                    <textarea name="textMessage" id="textMessage" class="form-control" rows="5" style="width:100%;" placeholder="Enter your comment..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Comment</button>
+            </form>
+        </div>
+    </div>
 </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rz/BuLbIeoHhQI1iPbRgpl5pU6kkCcpj9nTSTFOiJT0=",
+  "Hash": "MyDFcG5MdUWCKM6wL+Qaou8n6abkJyuGQgfs8B+tARI=",
   "Source": "TalkingUADev",
   "BasePath": "_content/TalkingUADev",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 17.gif"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\MyValidScript.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/MyValidScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\MyValidScript.js"
     },
     {
       "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
