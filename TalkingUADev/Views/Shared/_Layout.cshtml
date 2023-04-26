@@ -10,71 +10,58 @@
 </head>
 <body>
     <header>
+        @if (User.Identity.IsAuthenticated)
+        {
         <nav class="header__body">
             <div class="nav1">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">News</a>
-                @if (User.Identity.IsAuthenticated)
-                {
-                   
-                    <li class="nav-item">
-                        <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Add publication</a>
-                    </li>
-                    <li class="nav-item">
-                        <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Search</a>
-                    </li>
-                    
-                }
-                
+                <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
+                <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
+                <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
+                <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
             </div>
             <div class="logo">
                 <img src="~/Img/Logo.png" alt="Logo">
             </div>
             <div class="nav2">
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <li class="nav-item">
-                        <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Liked posts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Profile">Profile</a>
-                    </li>
-
-                }
-                else
-                {
-                    <partial name="_LoginPartial" />
-                }
-                @{/*
-                <a href="#" onclick="active(this)">Повідомлення</a>
-                <a href="#">Вихід</a>
-                */}
+                <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
+                <a asp-area="" asp-controller="" asp-action="">Повідомлення</a>
+                <a asp-area="" asp-controller="" asp-action="">Вихід</a>
             </div>
             <div class="dropdown">
                 <div class="burger">
                     <span></span>
                 </div>
-                <nav c>
+                <nav class="menu">
                     <ul class="list">
                         <li class="link">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">News</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
                         </li>
                         <li class="link">
-                            <a href="#" onclick="active(this)">Профіль</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
                         </li>
                         <li class="link">
-                            <a href="#" onclick="active(this)">Пошук</a>
+                            <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
                         </li>
                         <li class="link">
-                            <a href="#" onclick="active(this)">Повідомлення</a>
+                            <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
                         </li>
                         <li class="link">
-                            <a href="#">Вихід</a>
+                            <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
+                        </li>
+                        <li class="link">
+                            <a asp-area="" asp-controller="" asp-action="">Повідомлення</a>
+                        </li>
+                        <li class="link">
+                            <a asp-area="" asp-controller="" asp-action="">Вихід</a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial" />
                 </nav>
             </div>
-        </nav>
+            </nav>
+        } else
+        {
+            <partial name="_LoginPartial" />
+        }
     </header>
         <main>
             @RenderBody()

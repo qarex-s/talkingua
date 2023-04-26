@@ -5,13 +5,12 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
-header li a,
-header li a::after,
-header li a::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffffff80;
 }
 
 body.lock {
@@ -24,6 +23,15 @@ header {
     z-index: 50;
 }
 
+header,
+footer {
+    height: 82px;
+    background-color: #181819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header::before {
     position: absolute;
     left: 0;
@@ -34,13 +42,10 @@ header::before {
     z-index: 3;
 }
 
-header,
-footer {
-    height: 82px;
-    background-color: #181819;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header a, footer a{
+    color: #ffffff80;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .header__body {
@@ -50,7 +55,7 @@ footer {
 
 nav {
     margin: 0 auto;
-    width: 1488px;
+    width: 1600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,15 +66,9 @@ nav {
 }
 
 main {
-    max-width: 1200px;
     min-height: 1000px;
     height: 100%;
-    padding-top: 100px;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
+    padding-top: 82px;
 }
 
 .nav1,
@@ -80,13 +79,15 @@ a {
 
 .nav1 a:nth-child(1),
 .nav1 a:nth-child(2),
-.nav2 a:nth-child(1) {
-    margin-right: 100px;
+.nav1 a:nth-child(3),
+.nav2 a:nth-child(1),
+.nav2 a:nth-child(2) {
+    margin-right: 30px;
 }
 
 .logo {
     position: relative;
-    left: -69px;
+    left: -56px;
     z-index: 100;
 }
 
@@ -115,24 +116,13 @@ footer {
     cursor: text;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     nav {
         width: 100%;
     }
-
-    .logo {
-        left: -44px;
-    }
-
-    .nav1 p:nth-child(1),
-    .nav1 p:nth-child(2),
-    .nav2 p:nth-child(1) {
-        margin-right: 50px;
-    }
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1400px) {
     .nav1,
     .nav2 {
         display: none;
@@ -156,7 +146,7 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .burger {
         display: block;
         position: relative;
@@ -220,7 +210,7 @@ footer {
         background-color: #181819;
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: start;
         align-items: start;
         padding-top: 100px;
         transition: all 0.5s ease 0s;
@@ -282,5 +272,9 @@ footer {
         left: 3px;
         height: 3px;
         top: 15px;
+    }
+
+    main {
+        padding-top: 50px;
     }
 }

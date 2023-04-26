@@ -127,6 +127,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="likes-info">
+                                <div class="line"></div>
+                                <div class="likes">
+                                    <img src="~/Img/Like.png" alt="Like">
+                                    <p class="like-count">@post.Likes</p>
+                                    <p>вподобайок</p>
+                                </div>
+                            </div>
                         </div>
                     }
 
@@ -137,7 +145,8 @@
     </div>
 </div>
 
-
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script src="~/js/scriptNews.js"></script>
 @{/*<div class="container my-5">
     @{
         if (Model.Count() < 1)

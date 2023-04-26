@@ -1,23 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
-html {
-    background-color: #cecece;
-    font-family: 'Inter', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header,
-footer {
-    height: 82px;
-    background-color: #181819;
-}
-
-main {
+.main {
     max-width: 1288px;
     background-color: #f0f0f0;
     margin: 0 auto;
@@ -41,12 +22,19 @@ main {
 .head .nick {
     margin: 0 auto;
     margin-bottom: 24px;
+    text-align: center;
+}
+
+.head .nick > div {
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
 }
 
 .head .nick img {
-    border-radius: 47px;
-    height: 94px;
-    width: 94px;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 

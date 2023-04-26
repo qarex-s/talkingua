@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y2kdZ1BDiSbF4/03OObhah9HHilWOC2mMKJdQteGG2I=",
+  "Hash": "ZbYgqeV6jsjRHGq43XI1yTZ/FK59loLWhqusaGKprn0=",
   "Source": "TalkingUADev",
   "BasePath": "_content/TalkingUADev",
   "Mode": "Default",
@@ -1207,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot\\Img\\change_history.png"
     },
     {
+      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Like.png",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "Img/Like.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Like.png"
+    },
+    {
       "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Logo.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
@@ -1443,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scriptMyScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptNews.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/scriptNews.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scriptNews.js"
     },
     {
       "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptProfile.js",

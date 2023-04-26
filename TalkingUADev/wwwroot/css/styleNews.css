@@ -1,24 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-
-html {
-    background-color: #cecece;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inter', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header,
-footer {
-    height: 82px;
-    background-color: #181819;
-}
-
 main {
     max-width: 1288px;
     background-color: #f0f0f0;
@@ -32,9 +11,7 @@ main {
 }
 
 .stories {
-    padding-left: 50px;
-    padding-top: 14px;
-    padding-bottom: 17px;
+    padding: 14px 0 17px 50px;
     height: 155px;
     display: grid;
     grid-template-areas: "my last gradient";
@@ -43,38 +20,51 @@ main {
 .stories p {
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    text-align: center;
 }
 
 .my-story {
-    margin-bottom: 9px;
+    margin: 0 57px 9px 0;
     height: 100%;
     width: 93px;
-    margin-right: 57px;
     grid-area: my;
     cursor: pointer;
-
 }
 
-    .my-story > div {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 8px #000000;
-        border-radius: 46px;
-        height: 93px;
-        width: 93px;
-        margin-bottom: 9px;
-        padding: 2px;
-    }
+.my-story > div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px #000000;
+    border-radius: 50%;
+    height: 93px;
+    width: 93px;
+    margin-bottom: 9px;
+    padding: 2px;
+}
+
+.my-story > div > div {
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.my-story img {
+    object-fit: cover;
+}
 
 .last-stories {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
-    padding-top: 8px;
-    padding-left: 10px;
-    padding-right: 50px;
+    padding: 8px 50px 0 10px;
     grid-area: 1/2/1/4;
+    text-align: center;
+}
+
+.last-stories .story {
+    width: 77px;
+    margin-right: 32px;
 }
 
 .last-stories .story>div {
@@ -82,24 +72,29 @@ main {
     box-shadow: 0px 0px 8px #000000;
     height: 77px;
     width: 77px;
-    border-radius: 38px;
-    margin-right: 32px;
-    margin-bottom: 4px;
+    border-radius: 50%;
+    margin: 0 32px 4px 0;
     padding: 2px;
     cursor: pointer;
 }
 
-.last-stories .story img {
+.last-stories .story > div > div {
     height: 73px;
     width: 73px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.last-stories .story img {
+    object-fit: cover;
 }
 
 .last-stories .story p {
-    position: relative;
-    left: 20px;
+    max-width: 77px;
+    overflow: hidden;
 }
 
+/*
 .my-story .online {
     position: relative;
     top: -28px;
@@ -116,7 +111,7 @@ main {
     width: 16px;
     background: linear-gradient(180deg, #95E4A7 0%, #569783 100%);
     border-radius: 16px;
-}
+} */
 
 .gradient {
     position: relative;
@@ -155,6 +150,11 @@ main {
     margin: 0 auto;
 }
 
+.no-posts {
+    margin-top: 50px;
+    text-align: center;
+}
+
 .posts {
     display: flex;
     flex-direction: column;
@@ -164,7 +164,8 @@ main {
 .post {
     display: grid;
     grid-template-areas: "nick nick"
-        "post desc";
+        "post desc"
+        "likes likes";
     margin-bottom: 30px;
     padding-top: 20px;
 }
@@ -176,20 +177,26 @@ main {
     margin-bottom: 9px;
 }
 
-.nickname .story div {
+.nickname .story>div {
     background: #FFFFFF;
     box-shadow: 0px 0px 8px #000000;
     height: 46px;
     width: 46px;
-    border-radius: 23px;
+    border-radius: 50%;
     padding: 2px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.nickname .story>div>div {
+    height: 42px;
+    width: 42px;
+    border-radius: 42px;
+    overflow: hidden;
 }
 
 .nickname .story img {
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nickname p {
@@ -201,10 +208,20 @@ main {
 
 .photo {
     grid-area: post;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 549px;
+    height: 553px;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #e0e0e0;
 }
 
 .photo img {
-    max-width: 537px;
+    object-fit:cover;
+    border-radius: 10px;
 }
 
 .description {
@@ -215,58 +232,86 @@ main {
     width: 284px;
     height: 549px;
     padding: 15px 14px 45px 19px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
-.description .head {
+.head {
     margin-bottom: 50px;
 }
 
-.description .head h1 {
+.head h1 {
+    display: block;
+    max-height: 135px;
+    width: 250px;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 44px;
     text-align: center;
-}
-
-.description .head .hr {
-    width: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
     margin: 0 auto;
 }
 
-.description .head .desc {
-    margin-top: 20px;
-    overflow-y: scroll;
-    height: 200px;
+.head h1::-webkit-scrollbar {
+    margin-right: 20px;
+    width: 10px;
 }
 
-.description .head .tags {
+.head h1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000;
+    border-radius: 5px;
+}
+
+.head h1::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.head h1::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.desc {
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+.tags {
     padding-top: 13px;
     font-size: 15px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.76);
 }
 
-.description .foot {
+.foot {
     display: flex;
     flex-direction: column;
-    height: 126px;
+    max-height: 150px;
 }
 
-.description .foot p:not(.description .foot .comments p) {
+.foot p:not(.description .foot .comments p) {
     font-size: 18px;
     line-height: 20px;
 }
 
-.description .comments {
+.comments {
     display: flex;
     flex-direction: column;
     padding-top: 14px;
     padding-left: 14px;
     color: rgba(0, 0, 0, 0.5);
     overflow-y: scroll;
+    margin-bottom: 10px;
 }
 
 .comment {
@@ -301,6 +346,33 @@ main {
     background: grey;
 }
 
+.likes-info {
+    grid-area: likes;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 90%;
+    margin: 20px auto 8px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.likes {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likes img {
+    margin-right: 10px;
+}
+
+.likes .like-count {
+    margin-right: 5px;
+}
 
 @media (max-width: 1003px) {
     .gradient {
@@ -322,7 +394,8 @@ main {
     .post {
         grid-template-areas: "nick"
             "post"
-            "desc";
+            "desc"
+            "likes";
         margin-bottom: 50px;
     }
 
@@ -333,27 +406,30 @@ main {
 
     .description {
         margin-top: 25px;
+        margin-bottom: 20px;
         padding-bottom: 20px;
         height: 100%;
         width: 100%;
         overflow-y: scroll;
     }
 
-    .description .head {
+    .head {
         margin-bottom: 20px;
+    }
+
+    .likes-info {
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 767px) {
     .stories {
-        padding-left: 30px;
-        padding-top: 10px;
-        padding-bottom: 12px;
+        padding: 10px 0 12px 30px;
         height: 130px;
     }
 
     .stories p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .my-story {
@@ -361,30 +437,38 @@ main {
         margin-right: 40px;
     }
 
-        .my-story > div {
-            height: 77px;
-            width: 77px;
-        }
+    .my-story > div {
+        height: 77px;
+        width: 77px;
+    }
 
-            .my-story > div > img {
-                height: 73px;
-                width: 73px;
-                border-radius: 50%;
-            }
+    .my-story > div > div {
+        height: 73px;
+        width: 73px;
+    }
 
     .last-stories {
         padding-right: 50px;
     }
 
-        .last-stories .story > div {
-            height: 55px;
-            width: 55px;
-            border-radius: 50%;
-        }
+    .last-stories .story {
+        width: 55px;
+    }
+
+    .last-stories .story > div {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+
+    .last-stories .story > div > div {
+        height: 51px;
+        width: 51px;
+    }
 
     .last-stories .story img {
         height: 51px;
-        width: 51px;
+        width: auto;
     }
 
     .last-stories .story p {
@@ -396,6 +480,7 @@ main {
         height: 115px;
     }
 
+    /*
     .my-story .online {
         top: -25px;
         left: 60px;
@@ -408,7 +493,7 @@ main {
         height: 12px;
         width: 12px;
         border-radius: 16px;
-    }
+    } */
 
     .last-stories::-webkit-scrollbar {
         height: 9px;
@@ -421,15 +506,14 @@ main {
 
 @media (max-width: 576px) {
     .stories {
-        padding-left: 15px;
-        padding-top: 8px;
-        padding-bottom: 10px;
+        padding: 8px 0 10px 15px;
     }
 
     .my-story {
         margin-right: 30px;
     }
 
+    .my-story,
     .last-stories .story>div {
         margin-right: 20px;
     }
@@ -440,10 +524,16 @@ main {
         border-radius: 19px;
     }
 
-    .nickname .story img {
+    .nickname .story > div > div {
         height: 34px;
         width: 34px;
         border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .nickname .story img {
+        height: 34px;
+        width: auto;
     }
 
     .nickname p {
@@ -451,22 +541,27 @@ main {
         margin-left: 10px;
     }
 
-    .description .head h1 {
-        font-size: 24px;
+    .photo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .head h1 {
+        font-size: 20px;
         line-height: 30px;
     }
 
-    .description .head .tags {
+    .tags {
         padding-top: 10px;
         font-size: 13px;
         line-height: 16px;
     }
 
-    .description .foot {
-        height: 80px;
+    .foot {
+        height: 150px;
     }
 
-    .description .foot p {
+    .foot p {
         font-size: 16px;
         line-height: 20px;
     }
@@ -478,5 +573,9 @@ main {
     .comment p {
         line-height: 18px;
         font-size: 13px;
+    }
+
+    .likes-info {
+        height: 22px;
     }
 }

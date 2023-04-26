@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Img\\Avatar.png"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Like.png",
+      "PackagePath": "staticwebassets\\Img\\Like.png"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Logo.png",
       "PackagePath": "staticwebassets\\Img\\Logo.png"
     },
@@ -91,6 +95,10 @@
     {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
       "PackagePath": "staticwebassets\\js\\scriptMyScript.js"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptNews.js",
+      "PackagePath": "staticwebassets\\js\\scriptNews.js"
     },
     {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptProfile.js",

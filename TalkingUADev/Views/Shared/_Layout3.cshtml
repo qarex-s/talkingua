@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TalkingUADev</title>
+   
+
+    <link rel="stylesheet" href="~/css/styleMaster.css">
+</head>
+<body>
+    <header>
+        <nav class="header__body">
+            <div class="nav1">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">News</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                   
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Add publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Search</a>
+                    </li>
+                    
+                }
+                
+            </div>
+            <div class="logo">
+                <img src="~/Img/Logo.png" alt="Logo">
+            </div>
+            <div class="nav2">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Liked posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Profile">Profile</a>
+                    </li>
+
+                }
+                else
+                {
+                    <partial name="_LoginPartial" />
+                }
+                @{/*
+                <a href="#" onclick="active(this)">Повідомлення</a>
+                <a href="#">Вихід</a>
+                */}
+            </div>
+            <div class="dropdown">
+                <div class="burger">
+                    <span></span>
+                </div>
+                <nav c>
+                    <ul class="list">
+                        <li class="link">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">News</a>
+                        </li>
+                        <li class="link">
+                            <a href="#" onclick="active(this)">Профіль</a>
+                        </li>
+                        <li class="link">
+                            <a href="#" onclick="active(this)">Пошук</a>
+                        </li>
+                        <li class="link">
+                            <a href="#" onclick="active(this)">Повідомлення</a>
+                        </li>
+                        <li class="link">
+                            <a href="#">Вихід</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </nav>
+            </div>
+        </nav>
+    </header>
+        <main>
+            @RenderBody()
+        </main>
+    <footer>
+        <div class="footer">
+            <a href="#">About US</a>
+            <a href="#">FAQ</a>
+            <a>All copyright reserved 2023</a>
+        </div>
+    </footer>
+  
+
+    <script src="~/js/jquery-3.6.3Master.min.js"></script>
+    <script src="~/js/scriptMaster.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
