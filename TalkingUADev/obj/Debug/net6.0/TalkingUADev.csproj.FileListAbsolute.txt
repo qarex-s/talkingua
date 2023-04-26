@@ -619,7 +619,6 @@ C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\static
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\scopedcss\bundle\TalkingUADev.styles.css
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\scopedcss\projectbundle\TalkingUADev.bundle.scp.css
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\TalkingUADev.csproj.CopyComplete
@@ -628,3 +627,5 @@ C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\refint
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\TalkingUADev.pdb
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\TalkingUADev.genruntimeconfig.cache
 C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\ref\TalkingUADev.dll
+C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutMain.cshtml.rz.scp.css

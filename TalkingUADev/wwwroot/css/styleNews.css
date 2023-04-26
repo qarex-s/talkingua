@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+html {
+    background-color: #cecece;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    height: 82px;
+    background-color: #181819;
+}
+
+main {
+    max-width: 1288px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 900px;
+    max-width: 1003px;
+    margin: 0 auto;
+}
+
+.stories {
+    padding-left: 50px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    height: 155px;
+    display: grid;
+    grid-template-areas: "my last gradient";
+}
+
+.stories p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.my-story {
+    margin-bottom: 9px;
+    height: 100%;
+    width: 93px;
+    margin-right: 57px;
+    grid-area: my;
+    cursor: pointer;
+
+}
+
+    .my-story > div {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 8px #000000;
+        border-radius: 46px;
+        height: 93px;
+        width: 93px;
+        margin-bottom: 9px;
+        padding: 2px;
+    }
+
+.last-stories {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 50px;
+    grid-area: 1/2/1/4;
+}
+
+.last-stories .story>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px #000000;
+    height: 77px;
+    width: 77px;
+    border-radius: 38px;
+    margin-right: 32px;
+    margin-bottom: 4px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.last-stories .story img {
+    height: 73px;
+    width: 73px;
+    border-radius: 50%;
+}
+
+.last-stories .story p {
+    position: relative;
+    left: 20px;
+}
+
+.my-story .online {
+    position: relative;
+    top: -28px;
+    left: 68px;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.online div {
+    height: 16px;
+    width: 16px;
+    background: linear-gradient(180deg, #95E4A7 0%, #569783 100%);
+    border-radius: 16px;
+}
+
+.gradient {
+    position: relative;
+    left: 5px;
+    width: 200px;
+    height: 110px;
+    background: linear-gradient(269.2deg, #f0f0f0 38.79%, rgba(240, 240, 240, 0) 98.63%);
+    grid-area: gradient;
+}
+
+.hr {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.last-stories::-webkit-scrollbar {
+    height: 12px;
+}
+
+.last-stories::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000;
+    border-radius: 5px;
+}
+
+.last-stories::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.last-stories::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.wrapper {
+    max-width: 853px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+}
+
+.post {
+    display: grid;
+    grid-template-areas: "nick nick"
+        "post desc";
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.nickname {
+    grid-area: nick;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.nickname .story div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px #000000;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.nickname .story img {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.nickname p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.71);
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.photo {
+    grid-area: post;
+}
+
+.photo img {
+    max-width: 537px;
+}
+
+.description {
+    grid-area: desc;
+    background: linear-gradient(0deg, #BEBEBE -46.27%, #F0F0F0 54.37%);
+    box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    width: 284px;
+    height: 549px;
+    padding: 15px 14px 45px 19px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.description .head {
+    margin-bottom: 50px;
+}
+
+.description .head h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.description .head .hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.description .head .desc {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.description .head .tags {
+    padding-top: 13px;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.description .foot {
+    display: flex;
+    flex-direction: column;
+    height: 126px;
+}
+
+.description .foot p:not(.description .foot .comments p) {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.description .comments {
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    padding-left: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+}
+
+.comment {
+    margin-bottom: 8px;
+}
+
+.comment p {
+    display: inline;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.comments::-webkit-scrollbar,
+.desc::-webkit-scrollbar {
+    width: 10px;
+}
+
+.comments::-webkit-scrollbar-track,
+.desc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000;
+    border-radius: 5px;
+}
+
+.comments::-webkit-scrollbar-thumb,
+.desc::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.comments::-webkit-scrollbar-thumb:hover,
+.desc::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+
+@media (max-width: 1003px) {
+    .gradient {
+        left: 0px;
+    }
+
+    .hr {
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .posts {
+        padding: 10px;
+    }
+
+    .post {
+        grid-template-areas: "nick"
+            "post"
+            "desc";
+        margin-bottom: 50px;
+    }
+
+    .photo {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin-top: 25px;
+        padding-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .description .head {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .stories {
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        height: 130px;
+    }
+
+    .stories p {
+        font-size: 13px;
+    }
+
+    .my-story {
+        width: 77px;
+        margin-right: 40px;
+    }
+
+        .my-story > div {
+            height: 77px;
+            width: 77px;
+        }
+
+            .my-story > div > img {
+                height: 73px;
+                width: 73px;
+                border-radius: 50%;
+            }
+
+    .last-stories {
+        padding-right: 50px;
+    }
+
+        .last-stories .story > div {
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+        }
+
+    .last-stories .story img {
+        height: 51px;
+        width: 51px;
+    }
+
+    .last-stories .story p {
+        left: 13px;
+    }
+
+    .gradient {
+        width: 130px;
+        height: 115px;
+    }
+
+    .my-story .online {
+        top: -25px;
+        left: 60px;
+        height: 16px;
+        width: 16px;
+        border-radius: 16px;
+    }
+
+    .online div {
+        height: 12px;
+        width: 12px;
+        border-radius: 16px;
+    }
+
+    .last-stories::-webkit-scrollbar {
+        height: 9px;
+    }
+
+    .photo img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .stories {
+        padding-left: 15px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .my-story {
+        margin-right: 30px;
+    }
+
+    .last-stories .story>div {
+        margin-right: 20px;
+    }
+
+    .nickname .story div {
+        height: 38px;
+        width: 38px;
+        border-radius: 19px;
+    }
+
+    .nickname .story img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+    }
+
+    .nickname p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .description .head h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .description .head .tags {
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .description .foot {
+        height: 80px;
+    }
+
+    .description .foot p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .comment {
+        margin-bottom: 6px;
+    }
+
+    .comment p {
+        line-height: 18px;
+        font-size: 13px;
+    }
+}

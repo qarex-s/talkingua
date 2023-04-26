@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Img\\Avatar.png"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Logo.png",
+      "PackagePath": "staticwebassets\\Img\\Logo.png"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 10.png",
       "PackagePath": "staticwebassets\\Img\\Rectangle 10.png"
     },
@@ -41,6 +45,10 @@
       "PackagePath": "staticwebassets\\Img\\Rectangle 17.gif"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\change_history.png",
+      "PackagePath": "staticwebassets\\Img\\change_history.png"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg",
       "PackagePath": "staticwebassets\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg"
     },
@@ -49,8 +57,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleMaster.css",
+      "PackagePath": "staticwebassets\\css\\styleMaster.css"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleMyStyle.css",
       "PackagePath": "staticwebassets\\css\\styleMyStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleNews.css",
+      "PackagePath": "staticwebassets\\css\\styleNews.css"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleProfile.css",
+      "PackagePath": "staticwebassets\\css\\styleProfile.css"
     },
     {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\favicon.ico",
@@ -61,8 +81,20 @@
       "PackagePath": "staticwebassets\\js\\MyValidScript.js"
     },
     {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\jquery-3.6.3Master.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.6.3Master.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMaster.js",
+      "PackagePath": "staticwebassets\\js\\scriptMaster.js"
+    },
+    {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
       "PackagePath": "staticwebassets\\js\\scriptMyScript.js"
+    },
+    {
+      "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptProfile.js",
+      "PackagePath": "staticwebassets\\js\\scriptProfile.js"
     },
     {
       "Id": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\site.js",

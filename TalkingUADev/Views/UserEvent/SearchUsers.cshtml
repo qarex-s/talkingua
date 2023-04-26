@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row justify-content-center my-5">
         <div class="col-md-6">
-            <form method="post">
+            <form method="post" id="form-for-searching">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search" name="UserName" aria-label="Search" aria-describedby="button-search">
                     <button type ="submit" class="btn btn-primary" type="button" id="button-search">Search</button>
@@ -10,37 +10,25 @@
             </form>
         </div>
     </div>
-    <div class="row justify-content-center my-5">
-        @if (Model != null)
-        {
-            <div class="col-md-6">
-                <ul class="list-group">
-                    @foreach (var userItem in Model)
-                    {
-                        <div class="list-group-item list-group-item-action">
-                            <div class="row align-items-center">
-
-                                <div class="col-md-3">
-                                    <img src="@userItem.Image" alt="Photo: @userItem.Name" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-9">
-                                    <h5 class="mb-0">Email: @userItem.Email</h5>
-                                    <p class="mb-0">Full name: @userItem.FullName</p>
-                                    <p class="mb-0">Subs: @userItem.CountSubs</p>
-                                    <p class="mb-0">Posts: @userItem.CountPosts</p>
-                                    <a href="/UserEvent/ViewProfileUser?userId=@userItem.Id" class="btn btn-primary">View profile</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </ul>
-            </div>
-        }
-        else
-        {
-            <li class="list-group-item">User is not found</li>
-        }
+    <div class="row justify-content-center my-5" id="partial-results">
+       
 
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $('#form-for-searching').submit(function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("SearchUsers", "UserEvent")',
+            data: $(this).serialize(),
+            success: function (result) {
+                $('#partial-results').html(result);
+            }
+        });
+    });
+</script>
+

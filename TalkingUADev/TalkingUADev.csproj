@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\PartialViews\" />
     <Folder Include="wwwroot\MyStyle\css\" />
     <Folder Include="wwwroot\MyStyle\script\" />
   </ItemGroup>

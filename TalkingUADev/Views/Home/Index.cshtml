@@ -1,8 +1,144 @@
 ﻿@{
+    Layout = "_Layout";
+}
+
+@{
     ViewData["Title"] = "News Page";
 }
-@model List<TalkingUADev.Models.UserPost>
-<div class="container my-5">
+@model TalkingUADev.Util.UtilAllPostProp
+<link rel="stylesheet" href="~/css/styleNews.css">
+
+<div class="container">
+    <div class="stories">
+        <div class="my-story">
+            <div>
+                <img src="@Model.user.Image" alt="">
+                <div class="online">
+                    <div></div>
+                </div>
+            </div>
+            <p>Ваша сторіс</p>
+        </div>
+        <div class="last-stories">
+            <div class="story">
+                <div>
+                    <img src="https://cdn2.riastatic.com/photos/ir/new/auto/photo/mercedes-benz_g-class__491283587-620x415x70.webp" alt="">
+                </div>
+                <p>user1</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="https://i.infocar.ua/i/12/6947/1200x800.jpg" alt="">
+                </div>
+                <p>user2</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user3</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user4</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user5</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user6</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user7</p>
+            </div>
+            <div class="story">
+                <div>
+                    <img src="~/img/Avatar.png" alt="">
+                </div>
+                <p>user8</p>
+            </div>
+        </div>
+        <div class="gradient">
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="wrapper">
+        <div class="posts">
+            @{
+                if (Model.userPosts.Count() < 1)
+                {
+                    <h3 class="card-text">You need to subscribe to someone</h3>
+                }
+                else
+                {
+                    @foreach (UserPost post in Model.userPosts)
+                    {
+                        <div class="post">
+                            <div class="nickname">
+                                <div class="story">
+                                    <div>
+                                        <img src="@post.user.Image" alt="">
+                                    </div>
+                                </div>
+                                <a href="@Url.Action("ViewProfileUser", "UserEvent", new {userId = post.user.Id})">
+                                    <p>@@@post.user.Name</p>
+                                </a>
+                            </div>
+                            <div class="photo">
+                                <a href="@Url.Action("GetPublication", "Home", new {Id = post.UserPostId})">
+                                    <img src="@post.Image" alt="Post">
+                                </a>
+
+                            </div>
+                            <div class="description">
+                                <div class="head">
+                                    <h1>@post.Name</h1>
+                                    <div class="hr"></div>
+                                    <p class="desc">
+                                        @post.Desc
+                                    </p>
+                                    <p class="tags">@post.Tags</p>
+                                </div>
+                                <div class="foot">
+                                    <p>Комантарі</p>
+                                    <div class="comments">
+                                        @foreach (var comment in Model.userComments.Where(x => x.ToPostId == post.UserPostId))
+                                        {
+                                            <div class="comment">
+                                                <a href="@Url.Action("ViewProfileUser", "UserEvent", new {userId = comment.userApp.Id})">
+                                                    <p>@comment.userApp.Name</p>
+                                                </a>
+                                                <p>@comment.TextMessage</p>
+                                            </div>
+                                        }
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                }
+            }
+         
+        </div>
+    </div>
+</div>
+
+
+@{/*<div class="container my-5">
     @{
         if (Model.Count() < 1)
         {
@@ -10,27 +146,27 @@
         }
         else
         {
-            
-            <div class="row row-cols-1 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        @foreach (UserPost post in Model)
-                        {
+            <div class="row">
+                @foreach (UserPost post in Model)
+                {
+                    <div class="col-md-12 my-3">
+                        <div class="card h-100 border border-dark"  height: 300px;">
                             <img src="@post.Image" class="card-img-top" alt="photo: @post.Name">
                             <div class="card-body">
-                                <h5 class="card-title">@post.Name</h5>
-                                <p class="card-text">@post.Desc</p>
-                                <p class="card-text"><small class="text-muted">@post.Tags</small></p>
+                                <h5 class="card-title" style="font-size: 28px;">Name: @post.Name</h5>
+                                <p class="card-text" style="font-size: 24px;">Description: @post.Desc</p>
+                                <p class="card-text" style="font-size: 20px;">Like: @post.Likes</p>
+                                <p class="card-text"><small class="text-muted">Tags: @post.Tags</small></p>
                                 <p class="card-text"><small class="text-muted">Date: @post.DateOfCreatingPost</small></p>
+                                <a href="@Url.Action("GetPublication", "Home", new {Id = post.UserPostId})" class="btn btn-primary">View</a>
                             </div>
-                            <a href="@Url.Action("GetPublication", "Home", new {Id = post.UserPostId})" class="btn btn-primary">View</a>
-                        }
-
+                        </div>
                     </div>
-                </div>
-            </div><br /><br />
+                }
+            </div>
             <hr />
         }
     }
-    
 </div>
+*/
+}

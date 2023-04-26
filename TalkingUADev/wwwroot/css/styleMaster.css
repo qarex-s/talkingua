@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+html {
+    background-color: #cecece;
+    font-family: 'Inter', sans-serif;
+}
+
+header li a,
+header li a::after,
+header li a::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff80;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+header::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 3;
+}
+
+header,
+footer {
+    height: 82px;
+    background-color: #181819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__body {
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    margin: 0 auto;
+    width: 1488px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0 20px;
+}
+
+main {
+    max-width: 1200px;
+    min-height: 1000px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav1,
+.nav2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav1 a:nth-child(1),
+.nav1 a:nth-child(2),
+.nav2 a:nth-child(1) {
+    margin-right: 100px;
+}
+
+.logo {
+    position: relative;
+    left: -69px;
+    z-index: 100;
+}
+
+.dropdown {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer {
+    padding-right: 50px;
+    margin-left: 20px;
+}
+
+.footer a:nth-child(1),
+.footer a:nth-child(2) {
+    margin-right: 20px;
+}
+
+.footer a:nth-child(3) {
+    cursor: text;
+}
+
+@media (max-width: 1300px) {
+    nav {
+        width: 100%;
+    }
+
+    .logo {
+        left: -44px;
+    }
+
+    .nav1 p:nth-child(1),
+    .nav1 p:nth-child(2),
+    .nav2 p:nth-child(1) {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .nav1,
+    .nav2 {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .list li {
+        list-style: none;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        z-index: 51;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 80%;
+        height: 5px;
+        left: 6px;
+    }
+
+    .burger::before {
+        top: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger::after {
+        bottom: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 25px;
+    }
+
+    .burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 25px;
+    }
+
+    .burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 6px;
+        width: 80%;
+        height: 5px;
+        top: 26px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger.active span {
+        transform: scale(0);
+    }
+
+    .menu {
+        position: fixed;
+        top: -200%;
+        left: 0;
+        width: 100%;
+        background-color: #181819;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: start;
+        padding-top: 100px;
+        transition: all 0.5s ease 0s;
+        overflow: scroll;
+    }
+
+    .menu.active {
+        top: 0;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .link {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        height: 50px;
+    }
+
+    .logo img {
+        margin-top: 8px;
+        width: 200px;
+        height: auto;
+    }
+
+    .burger {
+        height: 36px;
+        width: 36px;
+    }
+
+    .burger::before,
+    .burger::after {
+        height: 3px;
+        left: 3px;
+    }
+
+    .burger::before {
+        top: 5px;
+    }
+
+    .burger::after {
+        bottom: 5px;
+    }
+
+    .burger.active::before {
+        top: 15px;
+    }
+
+    .burger.active::after {
+        bottom: 15px;
+    }
+
+    .burger span {
+        left: 3px;
+        height: 3px;
+        top: 15px;
+    }
+}

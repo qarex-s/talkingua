@@ -1,62 +1,6 @@
-﻿@{
-    Layout = "_Layout";
-}
-
-@model TalkingUADev.Util.UtilUserPost
+﻿@model TalkingUADev.Util.UtilUserPost
 @using TalkingUADev.Models
-<link rel="stylesheet" href="~/css/styleProfile.css">
-
-<main>
-    <div class="container">
-        <div class="head">
-            <div class="nick">
-                <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
-                <p>@@@Model.GetUserAppUtil().Name</p>
-            </div>
-            <div class="info">
-                <div class="subscribes">
-                    <p>@Model.GetUserAppUtil().CountSubs</p>
-                    <p>Підписок</p>
-                </div>
-                <div class="reader">
-                    <p>@Model.GetUserAppUtil().CountFollows</p>
-                    <p>Підписників</p>
-                </div>
-                <div class="count-post">
-                    <p id="posts_count">@Model.GetUserAppUtil().CountPosts</p>
-                    <p>Публікації</p>
-                </div>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div class="posts">
-            @{
-                if (Model.GetUserPostUtil().Count >= 1)
-                {
-                    @foreach (UserPost item in Model.GetUserPostUtil())
-                    {
-                        <div class="post">
-                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
-                                <img src="@item.Image" alt="Post">
-                            </a>
-                        </div>
-                        
-                    }
-
-                }
-                else
-                {
-                    <h3>Add some posts</h3>
-                }
-            }
-
-        </div>
-    </div>
-    </div>
-</main>
-<script src="~/js/scriptProfile.js"></script>
-
-@*<div class="container my-5">
+<div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-lg-4">
             <div class="text-center">
@@ -116,4 +60,4 @@
 
     </div>
 
-</div>*@
+</div>

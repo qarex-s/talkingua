@@ -43,10 +43,15 @@ namespace TalkingUADev.Controllers
                 Likes = post.Likes,
                 Position = post.Position,
                 Tags = post.Tags,
-                UserAppId = _user.GetUserId(User)
-
+                UserAppId = _user.GetUserId(User),
+                user = await _user.GetUserAsync(User)
             };
+            
             UserApp someUser = await _user.GetUserAsync(User);//thx this meth we can change some prop of UserApp which extends IdentityUser
+            if(someUser.Image == null)
+            {
+                return BadRequest();
+            }
             await _context.Posts.AddAsync(tempUserPost);
             await _context.SaveChangesAsync();
             someUser.posts.Add(tempUserPost);
@@ -61,17 +66,31 @@ namespace TalkingUADev.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> PartialSearching(string UserName)
+        {
+            var users = await _user.Users.Where(x => x.Name.Contains(UserName)).ToListAsync();
+            if (users != null)
+            {
+                return PartialView(users);
+            }
+            return BadRequest();
+        }
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> SearchUsers(string UserName)
         {
-            var users =  await _user.Users.Where(x => x.Name.Contains(UserName) ).ToListAsync();
+            var users = await _user.Users.Where(x => x.Name.Contains(UserName)).ToListAsync();
             if (users != null)
             {
-                return View(users);
+                return PartialView("_PartialSearching", users);
             }
-            return  View();
+            return BadRequest();
         }
+
+
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> ViewProfileUser(string userId)
@@ -92,7 +111,7 @@ namespace TalkingUADev.Controllers
             else
             {
                 //HERE WILL BE PAGE OF ERRORS
-                return RedirectToAction("Privacy");
+                return BadRequest();
             }
             
             
@@ -143,8 +162,8 @@ namespace TalkingUADev.Controllers
         [Authorize]
         public async Task<IActionResult> LikePost(string postId)
         {
-            var LikeUserTemp = await _context.likesUsers.Where(x=>x.PostId == postId && x.UserId == _user.GetUserId(User)).FirstOrDefaultAsync();
-            if(LikeUserTemp == null)
+            var LikeUserTemp = await _context.likesUsers.Where(x => x.PostId == postId && x.UserId == _user.GetUserId(User)).FirstOrDefaultAsync();
+            if (LikeUserTemp == null)
             {
                 LikeUserTemp = new LikeUser();
                 LikeUserTemp.UserId = _user.GetUserId(User);
@@ -154,7 +173,7 @@ namespace TalkingUADev.Controllers
                 await _context.likesUsers.AddAsync(LikeUserTemp);
 
             }
-            else 
+            else
             {
                 if (LikeUserTemp.isLiked)
                     LikeUserTemp.isLiked = false;
@@ -164,14 +183,14 @@ namespace TalkingUADev.Controllers
             }
             await _context.SaveChangesAsync();
 
-            var post = await _context.Posts.Where(x=>x.UserPostId.ToString() == postId).FirstOrDefaultAsync();
-            if(post !=null)
-                post.Likes = _context.likesUsers.Where(x=>x.PostId == postId && x.isLiked == true).ToList().Count();
+            var post = await _context.Posts.Where(x => x.UserPostId.ToString() == postId).FirstOrDefaultAsync();
+            if (post != null)
+                post.Likes = _context.likesUsers.Where(x => x.PostId == postId && x.isLiked == true).ToList().Count();
             else
-                return RedirectToAction("Privacy","Home");//PAGE ERRORS
+                return RedirectToAction("Privacy", "Home");//PAGE ERRORS
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("GetPublication","Home",new { Id = postId});
+            return RedirectToAction("GetPublication", "Home", new { Id = postId });
         }
 
         [HttpGet]
