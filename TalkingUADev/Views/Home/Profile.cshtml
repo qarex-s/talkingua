@@ -6,11 +6,13 @@
 @using TalkingUADev.Models
 <link rel="stylesheet" href="~/css/styleProfile.css">
 
-<main>
+<div class="main">
     <div class="container">
         <div class="head">
             <div class="nick">
-                <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
+                <div>
+                    <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
+                </div>
                 <p>@@@Model.GetUserAppUtil().Name</p>
             </div>
             <div class="info">
@@ -40,9 +42,7 @@
                                 <img src="@item.Image" alt="Post">
                             </a>
                         </div>
-                        
                     }
-
                 }
                 else
                 {
@@ -52,8 +52,8 @@
 
         </div>
     </div>
-    </div>
-</main>
+</div>
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
 <script src="~/js/scriptProfile.js"></script>
 
 @*<div class="container my-5">
@@ -102,7 +102,7 @@
                                     <p class="card-text">Likes: @item.Likes</p>
                                     <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     }

@@ -10,8 +10,7 @@
 </head>
 <body>
     <header>
-        @if (User.Identity.IsAuthenticated)
-        {
+        
         <nav class="header__body">
             <div class="nav1">
                 <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
@@ -51,17 +50,12 @@
                         <li class="link">
                             <a asp-area="" asp-controller="" asp-action="">Повідомлення</a>
                         </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="" asp-action="">Вихід</a>
-                        </li>
+                        
                     </ul>
                 </nav>
             </div>
             </nav>
-        } else
-        {
             <partial name="_LoginPartial" />
-        }
     </header>
         <main>
             @RenderBody()

@@ -12,62 +12,25 @@
     <div class="stories">
         <div class="my-story">
             <div>
-                <img src="@Model.user.Image" alt="">
+                <div><img src="@Model.user.Image" alt=""></div>
                 <div class="online">
                     <div></div>
                 </div>
             </div>
-            <p>Ваша сторіс</p>
+            <p>Сторіс</p>
         </div>
         <div class="last-stories">
-            <div class="story">
-                <div>
-                    <img src="https://cdn2.riastatic.com/photos/ir/new/auto/photo/mercedes-benz_g-class__491283587-620x415x70.webp" alt="">
+            @foreach (var follower in Model.followUsers)
+            {
+                <div class="story">
+                    <div>
+                        <div>
+                            <img src="@follower.Image" alt="">
+                        </div>
+                    </div>
+                    <p>@@@follower.UserName</p>
                 </div>
-                <p>user1</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="https://i.infocar.ua/i/12/6947/1200x800.jpg" alt="">
-                </div>
-                <p>user2</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user3</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user4</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user5</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user6</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user7</p>
-            </div>
-            <div class="story">
-                <div>
-                    <img src="~/img/Avatar.png" alt="">
-                </div>
-                <p>user8</p>
-            </div>
+            }
         </div>
         <div class="gradient">
         </div>
@@ -88,27 +51,24 @@
                             <div class="nickname">
                                 <div class="story">
                                     <div>
-                                        <img src="@post.user.Image" alt="">
+                                        <div>
+                                            <img src="@post.user.Image" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="@Url.Action("ViewProfileUser", "UserEvent", new {userId = post.user.Id})">
-                                    <p>@@@post.user.Name</p>
-                                </a>
+                                <p>@@@post.user.Name</p>
                             </div>
                             <div class="photo">
-                                <a href="@Url.Action("GetPublication", "Home", new {Id = post.UserPostId})">
-                                    <img src="@post.Image" alt="Post">
-                                </a>
-
+                                <img src="@post.Image" alt="Post">
                             </div>
                             <div class="description">
                                 <div class="head">
                                     <h1>@post.Name</h1>
                                     <div class="hr"></div>
-                                    <p class="desc">
+                                    <div class="desc">
                                         @post.Desc
-                                    </p>
-                                    <p class="tags">@post.Tags</p>
+                                        <p class="tags">@post.Tags</p>
+                                    </div>
                                 </div>
                                 <div class="foot">
                                     <p>Комантарі</p>

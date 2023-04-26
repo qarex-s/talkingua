@@ -25,15 +25,22 @@ namespace TalkingUADev.Controllers
         public async Task<IActionResult> Index()
         {
             UtilAllPostProp uAllPost= new UtilAllPostProp();
-            uAllPost.user = await _userManager.GetUserAsync(User);
-            if(uAllPost.user == null)
+            var user = await _userManager.GetUserAsync(User);
+
+            uAllPost.user = user;
+            if (user == null)
             {
                 return Redirect("/Identity/Account/Login");
             }
             var followedUsers = _context.followUsers.Where(x=>x.UserId == _userManager.GetUserId(User) && x.isFollowed).Select(x=>x.FollowerId).ToList();
             //List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).Include(x=>x.user).OrderByDescending(x=>x.DateOfCreatingPost).ToList();
+            uAllPost.followUsers = _userManager.Users.Where(x => _context.followUsers
+            .Select(x => x.UserId)
+            .Contains(x.Id))
+                .OrderByDescending(x => x.CountSubs)
+                .ToList();
             uAllPost.userPosts = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).Include(x => x.user).OrderByDescending(x => x.DateOfCreatingPost).ToList();
-            uAllPost.userComments = _context.commentsUsers.Where(x => uAllPost.userPosts.Select(x => x.UserPostId).Contains(x.ToPostId)).Include(x=>x.userApp).ToList();
+            uAllPost.userComments = _context.commentsUsers.Where(x => uAllPost.userPosts.Select(x => x.UserPostId).Contains(x.ToPostId)).Include(x=>x.userApp).OrderByDescending(x => x.DateOfCreatingComment).ToList();
             return  View(uAllPost);
         }
         [Authorize]
