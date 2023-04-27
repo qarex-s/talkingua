@@ -158,7 +158,7 @@ namespace TalkingUADev.Controllers
             return RedirectToAction("ViewProfileUser", "UserEvent", new { userId });
         }
 
-        [HttpGet]
+        [HttpPost]
         [Authorize]
         public async Task<IActionResult> LikePost(string postId)
         {
@@ -190,7 +190,7 @@ namespace TalkingUADev.Controllers
                 return RedirectToAction("Privacy", "Home");//PAGE ERRORS
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("GetPublication", "Home", new { Id = postId });
+            return PartialView("_PartialCountLikes", post);
         }
 
         [HttpGet]

@@ -11,13 +11,11 @@
             <p class="card-title fs-6">Tags: @Model.userPost.Tags</p>
             <p class="card-title fs-6">Posted: @Model.userPost.DateOfCreatingPost</p>
             <div class="d-flex align-items-center mb-3">
-                <form method="get" action="/UserEvent/LikePost">
-                    <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
-                    <button type="submit" class="btn btn-success me-2">
-                        <i class="bi bi-hand-thumbs-up"></i> Like
-                    </button>
-                </form>
-                <span class="fs-6 me-2">@Model.userPost.Likes</span>
+                <button type="button" class="btn btn-success me-2 like-button" data-post-id="@Model.userPost.UserPostId">
+                    <i class="bi bi-hand-thumbs-up"></i> Like
+                </button>
+
+                @{await Html.RenderPartialAsync("_PartialCountLikes",Model.userPost);}
             </div>
         </div>
     </div>
@@ -54,3 +52,23 @@
         </div>
     </div>
 </div>
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('.like-button').click(function () {
+            var postId = $(this).data('post-id');
+            var button = $(this);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("LikePost", "UserEvent")',
+                data: { postId: postId },
+                success: function (result) {
+                    $('#partial-count-likes-' + postId).html(result);
+                }
+            });
+        });
+    });
+
+</script>
