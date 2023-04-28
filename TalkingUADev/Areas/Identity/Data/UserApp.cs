@@ -26,5 +26,6 @@ public class UserApp : IdentityUser
     public List<FollowUser> followUsers = new List<FollowUser>();
     public List<LikeUser> likes = new List<LikeUser>();
     public List<UserComment> comments = new List<UserComment>();
+    public List<Chat> userChats = new List<Chat>();
 }
 

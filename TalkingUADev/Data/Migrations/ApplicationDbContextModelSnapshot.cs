@@ -255,6 +255,53 @@ namespace TalkingUADev.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("TalkingUADev.Models.Chat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("MainUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("SecondUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("chatRoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MainUserId");
+
+                    b.HasIndex("SecondUserId");
+
+                    b.HasIndex("chatRoomId");
+
+                    b.ToTable("chats");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.ChatRoom", b =>
+                {
+                    b.Property<int>("ChatRoomId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChatRoomId"), 1L, 1);
+
+                    b.Property<string>("ChatRoomName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ChatRoomId");
+
+                    b.ToTable("chatRooms");
+                });
+
             modelBuilder.Entity("TalkingUADev.Models.FollowUser", b =>
                 {
                     b.Property<int>("Id")
@@ -304,6 +351,37 @@ namespace TalkingUADev.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("likesUsers");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ChatId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfCreatingMessage")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MainUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("MessageText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChatId");
+
+                    b.HasIndex("MainUserId");
+
+                    b.ToTable("messages");
                 });
 
             modelBuilder.Entity("TalkingUADev.Models.UserComment", b =>
@@ -431,6 +509,52 @@ namespace TalkingUADev.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("TalkingUADev.Models.Chat", b =>
+                {
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "MainUser")
+                        .WithMany()
+                        .HasForeignKey("MainUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "SecondUser")
+                        .WithMany()
+                        .HasForeignKey("SecondUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TalkingUADev.Models.ChatRoom", "chatRoom")
+                        .WithMany("chats")
+                        .HasForeignKey("chatRoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainUser");
+
+                    b.Navigation("SecondUser");
+
+                    b.Navigation("chatRoom");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.Message", b =>
+                {
+                    b.HasOne("TalkingUADev.Models.Chat", "Chat")
+                        .WithMany()
+                        .HasForeignKey("ChatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "mainUserSender")
+                        .WithMany()
+                        .HasForeignKey("MainUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chat");
+
+                    b.Navigation("mainUserSender");
+                });
+
             modelBuilder.Entity("TalkingUADev.Models.UserComment", b =>
                 {
                     b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "userApp")
@@ -459,6 +583,11 @@ namespace TalkingUADev.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("user");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.ChatRoom", b =>
+                {
+                    b.Navigation("chats");
                 });
 #pragma warning restore 612, 618
         }

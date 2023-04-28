@@ -1,0 +1,236 @@
+﻿@using TalkingUADev.Areas.Identity.Data;
+@model TalkingUADev.Util.UtilChat
+
+
+@{
+
+}
+    <style>
+        .user-list {
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+        }
+
+    .chat-box3 {
+        height: 80vh;
+        border: 1px solid #ddd;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #messages-box2{
+        height: 80vh;
+        border: 1px solid #ddd;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    #messages-box2{
+        height: 850px;
+        overflow-y: scroll;
+    }
+        .chat-message {
+            margin: 5px;
+            padding: 10px;
+        background-color: #c9c9c9;
+            border-radius: 10px;
+            max-width: 60%;
+        }
+
+        .outgoing-message {
+            margin-left: auto;
+            background-color: #fff;
+        }
+
+        .form-message {
+            margin-top: 10px;
+            display: flex;
+        }
+
+            .form-message input[type="text"] {
+                flex: 1;
+                margin-right: 5px;
+            }
+
+        .add-chat-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            background-color: #000;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+            .add-chat-btn:hover {
+                background-color: #f60;
+                cursor: pointer;
+            }
+
+    .list-group-item.add-chat {
+        background-color: orange;
+        color: #000;
+    }
+
+    .outgoing-message {
+        margin-left: auto;
+        background-color: #c9c9c9;
+        text-align: right;
+    }
+
+    .chat-message .message-meta {
+        font-size: 0.8rem;
+        color: #999;
+        margin-bottom: 0.3rem;
+        text-align: right;
+    }
+
+    .chat-box3 {
+        height: 850px;
+        overflow-y: scroll; 
+    }
+
+    .user-list {
+        height: 400px; 
+        overflow-y: scroll; 
+    }
+
+
+    .user-list {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+   
+
+
+    </style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-lg-2 user-list" >
+            <div class="list-group">
+                @if (Model.chatRooms != null)
+                {
+                    @foreach (var item in Model.chatRooms)
+                    {
+                        <a href="Menu?RoomId=@item.ChatRoomId" class="list-group-item active">@item.ChatRoomName</a>
+                    }
+                }
+                <button type="button" class="btn btn-primary" style="background-color:#070707; color:orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-plus-lg"></i> Добавить чат
+                </button>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10" id="someChats">
+            <div class="chat-box2" id="messages-box2">
+                @if (Model.messages != null)
+                {
+                    @foreach (var item in Model.messages)
+                    {
+                        if (item.mainUserSender != Model.mainUser)
+                        {
+                            <div class="chat-message incoming-message">
+                                <img src="@item.mainUserSender.Image" style="width:50px; height:50px;" alt="SecUser" class="rounded-circle me-2">
+                                <span>@Html.ActionLink('@'+item.mainUserSender.Name,"ViewProfileUser","UserEvent",new {userId = item.mainUserSender.Id});</span>
+                                <div>
+                                    <span class="message-meta">@item.DateOfCreatingMessage.ToString("dd.MM.yyyy/HH:mm")</span>
+                                    <p>@item.MessageText</p>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="chat-message outgoing-message">
+                                <img src="@item.mainUserSender.Image" style="width:50px; height:50px;" alt="SecUser" class="rounded-circle me-2">
+                                <span>@Html.ActionLink('@'+item.mainUserSender.Name,"ViewProfileUser","UserEvent",new {userId = item.mainUserSender.Id});</span>
+                                <div>
+                                    <span class="message-meta">@item.DateOfCreatingMessage.ToString("dd.MM.yyyy/HH:mm")</span>
+                                    <p>@item.MessageText</p>
+                                </div>
+                                
+                                
+                            </div>
+                        }
+
+                    }
+                }
+               
+               
+               
+
+            </div>
+            @if (Model.chatRooms != null)
+            {
+                <form class="form-message" method="post" action="AddingNewMessage">
+                    <input type="text" class="form-control" name="message" placeholder="Type your message here...">
+                    <input type="hidden" name="chatId" value="@Model.someChat.Id" />
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            }
+            
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Добавить новый чат</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="AddingNewChat" name="myForm" onsubmit="return validateFormEmpty()">
+                    <div class="mb-3">
+                        <label for="chatName" class="col-form-label">Имя чата:</label>
+                        <input type="text" class="form-control" name="name" id="chatName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userName" class="col-form-label">Имя пользователя:</label>
+                        <input type="text" class="form-control" name="SecondUserName" id="userName">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-primary" id="Button-for-adding-new-chat">Добавить</button>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function validateFormEmpty() {
+        console.log("validateFormEmpty called");
+        var chatName = document.getElementById("chatName").value;
+        var userName = document.getElementById("userName").value;
+        if (chatName == "" || userName == "") {
+            alert("You need to set all fields");
+            return false;
+        }else{
+            if (chatName.length > 18) {
+                alert("Name of chat need get less than 18 symbols");
+                return false;
+            }
+            if (userName.length > 18) {
+                alert("UserName need get less than 18 symbols");
+                return false;
+            }
+            }
+        }
+
+    var objDiv = document.getElementById("messages-box");
+    objDiv.scrollTop = objDiv.scrollHeight;
+
+</script>
