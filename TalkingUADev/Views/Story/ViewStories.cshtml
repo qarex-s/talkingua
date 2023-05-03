@@ -1,0 +1,32 @@
+﻿@model List<TalkingUADev.Models.UserStory>
+<div class="container">
+    <h1 class="text-center my-5">Stories</h1>
+
+    <div class="row">
+        @if (Model != null)
+        {
+            foreach (var storyItem in Model)
+            {
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="@storyItem.ImageStory" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Views: @storyItem.CountWathcedStory</h5>
+                            <p class="card-text">Date: @storyItem.DateOfCreatingStory</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h3>Stories not aviable</h3>
+        }
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

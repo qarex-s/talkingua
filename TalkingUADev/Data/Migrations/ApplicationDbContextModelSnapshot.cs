@@ -353,6 +353,28 @@ namespace TalkingUADev.Data.Migrations
                     b.ToTable("likesUsers");
                 });
 
+            modelBuilder.Entity("TalkingUADev.Models.ListUserStory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("isActiveListStories")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("listUserStories");
+                });
+
             modelBuilder.Entity("TalkingUADev.Models.Message", b =>
                 {
                     b.Property<int>("Id")
@@ -458,6 +480,61 @@ namespace TalkingUADev.Data.Migrations
                     b.ToTable("Posts");
                 });
 
+            modelBuilder.Entity("TalkingUADev.Models.UserStory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CountWathcedStory")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfCreatingStory")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageStory")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ListUserStoryId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isActiveStory")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ListUserStoryId");
+
+                    b.ToTable("stories");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.WatchedStoriesByUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("StoriesId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("StoriesId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("watchedStories");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -536,6 +613,17 @@ namespace TalkingUADev.Data.Migrations
                     b.Navigation("chatRoom");
                 });
 
+            modelBuilder.Entity("TalkingUADev.Models.ListUserStory", b =>
+                {
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "UserOfStore")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UserOfStore");
+                });
+
             modelBuilder.Entity("TalkingUADev.Models.Message", b =>
                 {
                     b.HasOne("TalkingUADev.Models.Chat", "Chat")
@@ -583,6 +671,36 @@ namespace TalkingUADev.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("user");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.UserStory", b =>
+                {
+                    b.HasOne("TalkingUADev.Models.ListUserStory", "listUserStory")
+                        .WithMany()
+                        .HasForeignKey("ListUserStoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("listUserStory");
+                });
+
+            modelBuilder.Entity("TalkingUADev.Models.WatchedStoriesByUser", b =>
+                {
+                    b.HasOne("TalkingUADev.Models.UserStory", "someStory")
+                        .WithMany()
+                        .HasForeignKey("StoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TalkingUADev.Areas.Identity.Data.UserApp", "mainUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("mainUser");
+
+                    b.Navigation("someStory");
                 });
 
             modelBuilder.Entity("TalkingUADev.Models.ChatRoom", b =>

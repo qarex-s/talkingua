@@ -19,5 +19,8 @@ namespace TalkingUADev.Data
         public DbSet<Message> messages { get; set; }
         public DbSet<Chat> chats { get; set; }
         public DbSet<ChatRoom> chatRooms { get; set; }
+        public DbSet<UserStory> stories { get; set; }
+        public DbSet<ListUserStory> listUserStories { get; set; }
+        public DbSet<WatchedStoriesByUser> watchedStories { get; set; }
     }
 }

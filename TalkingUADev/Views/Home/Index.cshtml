@@ -12,7 +12,8 @@
     <div class="stories">
         <div class="my-story">
             <div>
-                <div><img src="@Model.user.Image" alt=""></div>
+                <div><a href=""<img src="@Model.user.Image" alt=""></a></div>
+                @Html.ActionLink("Watch stories","ViewStories","Story",new {UserId = Model.user.Id})">
                 <div class="online">
                     <div></div>
                 </div>
@@ -28,7 +29,9 @@
                             <img src="@follower.Image" alt="">
                         </div>
                     </div>
-                    <p>@@@follower.UserName</p>
+                    
+                        @Html.ActionLink(follower.UserName,"ViewStories","Story",new {UserId = follower.Id})
+                        
                 </div>
             }
         </div>

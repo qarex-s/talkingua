@@ -33,7 +33,6 @@ namespace TalkingUADev.Controllers
                 return Redirect("/Identity/Account/Login");
             }
             var followedUsers = _context.followUsers.Where(x=>x.UserId == _userManager.GetUserId(User) && x.isFollowed).Select(x=>x.FollowerId).ToList();
-            //List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).Include(x=>x.user).OrderByDescending(x=>x.DateOfCreatingPost).ToList();
             uAllPost.followUsers = _userManager.Users.Where(x => _context.followUsers
             .Select(x => x.UserId)
             .Contains(x.Id))
@@ -72,6 +71,7 @@ namespace TalkingUADev.Controllers
             {
                 UtilPostLike postLike = new UtilPostLike();
                 postLike.userPost = await _context.Posts
+                    .Include(x=>x.user)
                     .FirstAsync(x => x.UserPostId == Id);
 
                 postLike.userLike = await _context.likesUsers
@@ -97,37 +97,6 @@ namespace TalkingUADev.Controllers
             return View();
         }
 
-
-
-        /*
-
-        //NEW STYLE NEWSPAGE
-
-        public IActionResult IndexDev()
-        {
-            var followedUsers = _context.followUsers.Where(x => x.UserId == _userManager.GetUserId(User) && x.isFollowed).Select(x => x.FollowerId).ToList();
-            List<UserPost> foolowedUsersPost = _context.Posts.Where(x => followedUsers.Contains(x.UserAppId)).OrderBy(x => x.DateOfCreatingPost).ToList();
-            return View(foolowedUsersPost);
-        }
-
-        //NEW STYLE PROFILE
-        [Authorize]
-        public async Task<IActionResult> ProfileDevAsync()
-        {
-            UserApp _user = _context.Users.Where(x => x.Id == _userManager.GetUserId(User)).FirstOrDefault();
-            List<UserPost> _userPosts = _context.Posts.Where(x => x.UserAppId == _user.Id.ToString()).ToList();
-            _user.CountPosts = _userPosts.Count;
-            _user.posts = _userPosts;
-            await _userManager.UpdateAsync(_user);
-            UtilUserPost utilUserAndPost = new UtilUserPost();
-
-            utilUserAndPost.SetUserAppUtil(_user);
-            utilUserAndPost.SetUserPostsUtil(_userPosts);
-
-            return View(utilUserAndPost);
-        }
-
-        */
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

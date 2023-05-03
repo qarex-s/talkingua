@@ -1,0 +1,15 @@
+﻿<div class="container my-5">
+    <form method="post" action="CreatingStory">
+        <div class="form-group">
+            <label for="image-url">URL картинки</label>
+            <input type="text" class="form-control" id="image-url" name="Image" placeholder="Enter URL of Image">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-secondary" onclick="cancel()">Cancell</button>
+    </form>
+</div>
+<script>
+    function cancel() {
+        document.getElementById("image-url").value = "";
+    }
+</script>
