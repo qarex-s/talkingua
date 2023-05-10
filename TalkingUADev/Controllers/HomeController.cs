@@ -61,8 +61,9 @@ namespace TalkingUADev.Controllers
         [Authorize]
         public async Task<IActionResult> GetPublication(Guid?Id)
         {
-            var userPost = await _context.Posts.FirstOrDefaultAsync(x => x.UserPostId == Id);
-
+            var userPost = await _context.Posts.FirstOrDefaultAsync(x => x.UserPostId == Id );
+            //temporaryCRINGE
+            var userOfPost = userPost.user;
             if (userPost == null)
             {
                 return NotFound();

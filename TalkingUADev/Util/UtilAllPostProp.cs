@@ -9,5 +9,6 @@ namespace TalkingUADev.Util
         public List<UserComment> userComments { get; set; }
         public UserApp user { get; set; }
         public List<UserApp> followUsers { get; set; }
+        public UtilStories utilStories { get; set; }
     }
 }

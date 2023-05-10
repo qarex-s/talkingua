@@ -1,0 +1,402 @@
+.main {
+    max-width: 1288px;
+    min-height: 920px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 800px;
+    max-width: 1003px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 853px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+}
+
+.post {
+    display: grid;
+    grid-template-areas:
+        "nick nick"
+        "post desc"
+        "input input"
+        "likes likes";
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.hr {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nickname {
+    grid-area: nick;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.nickname .story > div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px #000000;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.nickname .story > div > div {
+    height: 42px;
+    width: 42px;
+    border-radius: 42px;
+    overflow: hidden;
+}
+
+.nickname .story img {
+    object-fit: cover;
+}
+
+.nickname p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.71);
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.photo {
+    grid-area: post;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 549px;
+    height: 553px;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.photo img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.description {
+    grid-area: desc;
+    background: linear-gradient(0deg, #BEBEBE -46.27%, #F0F0F0 54.37%);
+    box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    width: 284px;
+    height: 549px;
+    padding: 15px 14px 45px 19px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head {
+    margin-bottom: 50px;
+}
+
+.head h1 {
+    display: block;
+    max-height: 135px;
+    width: 250px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.head h1::-webkit-scrollbar {
+    margin-right: 20px;
+    width: 10px;
+}
+
+.head h1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000;
+    border-radius: 5px;
+}
+
+.head h1::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.head h1::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.desc {
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+.tags {
+    padding-top: 13px;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+}
+
+.foot p:not(.comments p) {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    padding-left: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.comment {
+    margin-bottom: 8px;
+}
+
+.comment p {
+    display: inline;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.comments::-webkit-scrollbar,
+.desc::-webkit-scrollbar {
+    width: 10px;
+}
+
+.comments::-webkit-scrollbar-track,
+.desc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000;
+    border-radius: 5px;
+}
+
+.comments::-webkit-scrollbar-thumb,
+.desc::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+}
+
+.comments::-webkit-scrollbar-thumb:hover,
+.desc::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.input-comment {
+    margin-top: 25px;
+    grid-area: input;
+}
+
+.input-comment textarea {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+    background: #F0F0F0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Inter;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.input-comment button {
+    width: 150px;
+    height: 42px;
+    background: #212121;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.likes-info img {
+    height: 22px;
+}
+
+.likes-info {
+    grid-area: likes;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 90%;
+    margin: 20px auto 8px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.likes {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likes img {
+    margin-right: 10px;
+}
+
+.likes .like-count {
+    margin-right: 5px;
+}
+
+@media (max-width: 1003px) {
+    .hr {
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .posts {
+        padding: 10px;
+    }
+
+    .post {
+        grid-template-areas: "nick"
+            "post"
+            "desc"
+            "input"
+            "likes";
+        margin-bottom: 50px;
+    }
+
+    .photo {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .head {
+        margin-bottom: 20px;
+    }
+
+    .input-comment {
+        margin-top: 50px;
+    }
+
+    .line {
+        margin-top: 10px;
+    }
+
+    .likes-info {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nickname .story div {
+        height: 38px;
+        width: 38px;
+        border-radius: 19px;
+    }
+
+    .nickname .story > div > div {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .nickname .story img {
+        height: 34px;
+        width: auto;
+    }
+
+    .nickname p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .photo {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .head h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .tags {
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .foot {
+        max-height: 150px;
+    }
+
+    .foot p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .comment {
+        margin-bottom: 6px;
+    }
+
+    .comment p {
+        line-height: 18px;
+        font-size: 13px;
+    }
+
+    .input-comment button {
+        margin-top: 8px;
+    }
+
+    .likes-info {
+        height: 22px;
+    }
+}

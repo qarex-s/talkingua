@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZbYgqeV6jsjRHGq43XI1yTZ/FK59loLWhqusaGKprn0=",
+  "Hash": "Nw5llkrwlEanBPzwLKzIMtNGCQx6vAHWdu/8URxw74E=",
   "Source": "TalkingUADev",
   "BasePath": "_content/TalkingUADev",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "TalkingUADev\\wwwroot",
       "Source": "TalkingUADev",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Erik\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.15\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TalkingUADev.styles.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TalkingUADev.styles.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "TalkingUADev.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TalkingUADev.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TalkingUADev.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TalkingUADev.bundle.scp.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TalkingUADev.bundle.scp.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "TalkingUADev.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TalkingUADev.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TalkingUADev.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\site.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleMaster.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleMaster.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "css/styleMaster.css",
       "AssetKind": "All",
@@ -1105,10 +1105,27 @@
       "OriginalItemSpec": "wwwroot\\css\\styleMaster.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleMyStyle.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleMessenger.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "css/styleMessenger.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleMessenger.css"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleMyStyle.css",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "css/styleMyStyle.css",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styleMyStyle.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleNews.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleNews.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "css/styleNews.css",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styleNews.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\css\\styleProfile.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleProfile.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "css/styleProfile.css",
       "AssetKind": "All",
@@ -1156,10 +1173,27 @@
       "OriginalItemSpec": "wwwroot\\css\\styleProfile.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleViewPost.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "css/styleViewPost.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleViewPost.css"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\favicon.ico",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1173,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Avatar.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Avatar.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Avatar.png",
       "AssetKind": "All",
@@ -1190,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Avatar.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\change_history.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\change_history.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/change_history.png",
       "AssetKind": "All",
@@ -1207,10 +1241,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\change_history.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Like.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\close.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "Img/close.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\close.png"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Like.png",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Like.png",
       "AssetKind": "All",
@@ -1224,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Like.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Logo.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Logo.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Logo.png",
       "AssetKind": "All",
@@ -1241,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Logo.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/mercedes-amg-gt-73-four-door-spy-photos.jpg",
       "AssetKind": "All",
@@ -1258,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\mercedes-amg-gt-73-four-door-spy-photos.jpg"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 10.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 10.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 10.png",
       "AssetKind": "All",
@@ -1275,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 10.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 11.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 11.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 11.png",
       "AssetKind": "All",
@@ -1292,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 11.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 12.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 12.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 12.png",
       "AssetKind": "All",
@@ -1309,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 12.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 13.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 13.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 13.png",
       "AssetKind": "All",
@@ -1326,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 13.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 14.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 14.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 14.png",
       "AssetKind": "All",
@@ -1343,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 14.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 15.png",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 15.png",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 15.png",
       "AssetKind": "All",
@@ -1360,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 15.png"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 16.jpg",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 16.jpg",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 16.jpg",
       "AssetKind": "All",
@@ -1377,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 16.jpg"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\Img\\Rectangle 17.gif",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\Img\\Rectangle 17.gif",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "Img/Rectangle 17.gif",
       "AssetKind": "All",
@@ -1394,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\Img\\Rectangle 17.gif"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\jquery-3.6.3Master.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\jquery-3.6.3Master.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/jquery-3.6.3Master.min.js",
       "AssetKind": "All",
@@ -1411,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.6.3Master.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\MyValidScript.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\MyValidScript.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/MyValidScript.js",
       "AssetKind": "All",
@@ -1428,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\js\\MyValidScript.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMaster.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptMaster.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/scriptMaster.js",
       "AssetKind": "All",
@@ -1445,10 +1496,27 @@
       "OriginalItemSpec": "wwwroot\\js\\scriptMaster.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptMessenger.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/scriptMessenger.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scriptMessenger.js"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptMyScript.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/scriptMyScript.js",
       "AssetKind": "All",
@@ -1462,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scriptMyScript.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptNews.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptNews.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/scriptNews.js",
       "AssetKind": "All",
@@ -1479,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scriptNews.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\scriptProfile.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptProfile.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/scriptProfile.js",
       "AssetKind": "All",
@@ -1496,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scriptProfile.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\site.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1513,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1530,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1547,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1564,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1581,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1598,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1615,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1632,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1649,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1666,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1683,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1700,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1717,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1734,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1751,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1768,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1785,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1802,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1819,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1836,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1853,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1870,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1887,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1904,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1921,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1938,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1955,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1972,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1989,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2006,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2023,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2040,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2057,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2074,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2091,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2108,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2125,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2142,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2159,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2176,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2193,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2210,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2227,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2244,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2261,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2278,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2295,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2312,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2329,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2346,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2363,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2380,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2397,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2414,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2431,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2448,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2465,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
       "BasePath": "_content/TalkingUADev",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

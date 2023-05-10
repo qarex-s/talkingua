@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QOOhEJa3mRE7UUSsCs52T+LyUblJK4iqXRUh6uf8p0lgMj6IRyio9fJ2dtXjWK60NawfQjfg6m7mTNy1P0fK/w==",
+  "dgSpecHash": "cKSL8LxuOQkdoAXdIpi/XUhL2XBqVcX6MJ+R17HSmjXygzNTDODX2do+cd6yqE3joRZHLy+aFSERVh67PzYdUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Erik\\Desktop\\talkingHubv\\talkingua\\TalkingUADev\\TalkingUADev.csproj",
+  "projectFilePath": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\TalkingUADev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Erik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Erik\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

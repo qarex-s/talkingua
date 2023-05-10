@@ -1,61 +1,77 @@
-﻿@model TalkingUADev.Util.UtilPostLike
+﻿@{
+    Layout = "_Layout";
+}
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <img src="@Model.userPost.Image" class="img-fluid shadow-lg rounded" alt="Responsive image" />
-        </div>
-        <div class="col-md-8">
-            <p class="card-title fs-6">User: @@@Model.userPost.user.UserName</p>
-            <h5 class="card-title fs-5">Publication: @Model.userPost.Name</h5>
-            <p class="card-title fs-6">Description: @Model.userPost.Desc</p>
-            <p class="card-title fs-6">Tags: @Model.userPost.Tags</p>
-            <p class="card-title fs-6">Posted: @Model.userPost.DateOfCreatingPost</p>
-            <div class="d-flex align-items-center mb-3">
-                <button type="button" class="btn btn-success me-2 like-button" data-post-id="@Model.userPost.UserPostId">
-                    <i class="bi bi-hand-thumbs-up"></i> Like
-                </button>
+@{
+    ViewData["Title"] = "View Post";
+}
 
-                @{await Html.RenderPartialAsync("_PartialCountLikes",Model.userPost);}
-            </div>
-        </div>
-    </div>
-    <hr />
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <h6>Comments:</h6>
-            <ul class="list-unstyled">
-               
-                @foreach (var comment in Model.postComments)
-                {
-                    <li class="media mb-3">
-                        <img src="@comment.userApp.Image" class="mr-3 rounded-circle" alt="photo: @comment.userApp.FullName" style="width:50px; height:50px;">
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1"><a href="/UserEvent/ViewProfileUser?userId=@comment.userApp.Id">@comment.userApp.Name</a></h5>
-                            @comment.TextMessage
-                            <h6 class="mt-3">Date: @comment.DateOfCreatingComment.ToString("dd/MM/yyyy/HH:mm:ss")</h6>
+@model TalkingUADev.Util.UtilPostLike;
+<link rel="stylesheet" href="~/css/styleViewPost.css">
+<div class="main">
+    <div class="container">
+        <div class="wrapper">
+            <div class="posts">
+                <div class="post">
+                    <div class="nickname">
+                        <div class="story">
+                            <div>
+                                <img src="@Model.userPost.user.Image" />
+                            </div>
                         </div>
-                    </li>
-                    <hr class="comment-divider" />
-                }
-            </ul>
-        </div>
-    </div>
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-8">
-            <form onsubmit="return validateForm();" method="post" action="/UserEvent/WriteComment">
-                <div class="mb-3">
-                    <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
-                    <textarea name="textMessage" id="textMessage" class="form-control" rows="5" style="width:100%;" placeholder="Enter your comment..."></textarea>
+                        <p>@@@Model.userPost.user.Name</p>
+                    </div>
+                    <div class="photo">
+                        <img src="@Model.userPost.Image" />
+                    </div>
+                    <div class="description">
+                        <div class="head">
+                            <h1>@Model.userPost.Name</h1>
+                            <div class="hr"></div>
+                            <div class="desc">
+                                @Model.userPost.Desc
+                                <p class="tags">@Model.userPost.Tags</p>
+                            </div>
+                        </div>
+                        <div class="foot">
+                            <p>Комантарі</p>
+                            <div class="comments">
+                                @foreach (var comment in Model.postComments)
+                                {
+                                    <div class="comment">
+                                        <p>@@@comment.userApp.Name</p>
+                                        <p>@comment.TextMessage</p>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-comment">
+                        <form onsubmit="return validateForm();" method="post" action="/UserEvent/WriteComment">
+                            <div>
+                                <input type="hidden" name="postId" value="@Model.userPost.UserPostId" />
+                                <textarea name="textMessage" id="textMessage" placeholder="Ваш коментар"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Comment</button>
+                        </form>
+                    </div>
+                    <div class="likes-info">
+                        <div class="line"></div>
+                        <div class="likes like-button" style="cursor:pointer" data-post-id="@Model.userPost.UserPostId">
+                            <img src="~/Img/Like.png" alt="Like">
+                            <p class="like-count"> @{await Html.RenderPartialAsync("_PartialCountLikes",Model.userPost);}</p>
+                            <p>вподобайок</p>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Comment</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>
 <script src="~/js/jquery-3.6.3Master.min.js"></script>
-<script>
+<script src="~/js/scriptViewPost.js"></script>
 
+<script>
     $(document).ready(function () {
         $('.like-button').click(function () {
             var postId = $(this).data('post-id');

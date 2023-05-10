@@ -99,6 +99,10 @@ namespace TalkingUADev.Controllers
             var UserGet = await _user.Users.Where(x => x.Id == userId).FirstOrDefaultAsync();
             if(UserGet != null)
             {
+                if(UserGet == await _user.GetUserAsync(User))
+                {
+                   return RedirectToAction("Profile", "Home");
+                }
                 utilUserPost.SetAll(UserGet,
                 await _context.Posts.Where(x => x.UserAppId == userId)
                 .OrderByDescending(x=>x.DateOfCreatingPost)

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using TalkingUADev.Areas.Identity.Data;
 using TalkingUADev.Data;
 using TalkingUADev.Models;
+using TalkingUADev.Util;
 
 namespace TalkingUADev.Controllers
 {
@@ -58,10 +59,20 @@ namespace TalkingUADev.Controllers
         {
             var someUser = await _userManager.Users.Where(x=>x.Id == UserId).FirstOrDefaultAsync();
             var allStorysUser = await _context.stories.Where(x => x.listUserStory.UserId == UserId).ToListAsync();
-            if(_context.watchedStories.Any(x=> allStorysUser.Select(x=>x.Id).Contains(x.StoriesId) && x.UserId == UserId){
-
-            }
-            return View(allStorysUser);
+            //if(_context.watchedStories.Any(x=> allStorysUser.Select(x=>x.Id).Contains(x.StoriesId) && x.UserId == _userManager.GetUserId(User))){
+            //    WatchedStoriesByUser watchedStories = new WatchedStoriesByUser();
+            //    watchedStories.StoriesId = allStorysUser.First().Id;
+            //    watchedStories.someStory = allStorysUser.First();
+            //    watchedStories.UserId = _userManager.GetUserId(User);
+            //    watchedStories.mainUser = await _userManager.GetUserAsync(User);
+            //    await _context.watchedStories.AddAsync(watchedStories);
+            //    await _context.SaveChangesAsync();
+            //}
+            UtilStories utilStories = new UtilStories();
+            utilStories.stories = allStorysUser;
+            utilStories.someStory = allStorysUser.First();
+            utilStories.followerUser = await _userManager.Users.Where(x => x.Id == UserId).FirstAsync();
+            return PartialView("_PartialListStories",utilStories);
         }
 
 
@@ -70,11 +81,36 @@ namespace TalkingUADev.Controllers
         public async Task<IActionResult> ViewStory(string UserId)
         {
             var someUser = await _userManager.Users.Where(x => x.Id == UserId).FirstOrDefaultAsync();
-            var allStorysUser = await _context.stories.Where(x => x.listUserStory.UserId == UserId).ToListAsync();
-            if (_context.watchedStories.Any(x => allStorysUser.Select(x => x.Id).Contains(x.StoriesId) && x.UserId == UserId){
+            var allStorysUser = await _context.stories.Where(x => x.listUserStory.UserId == UserId).ToListAsync();//getting all stories (id) of User-subject
+            //if (_context.watchedStories.Any(x => allStorysUser.Select(x => x.Id).Contains(x.StoriesId) && x.UserId == _userManager.GetUserId(User))){
+
+            //}
+            UtilStories utilStories = new UtilStories();
+            utilStories.stories = allStorysUser;
+            utilStories.followerUser = someUser;
+            return View(utilStories);
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> GetStoryById(int StoryId)
+        {
+            var someStory = await _context.stories.Where(x => x.Id == StoryId).FirstAsync();
+            if (!_context.watchedStories.Any(x =>  x.StoriesId == someStory.Id && x.UserId == _userManager.GetUserId(User)))
+            {
+                WatchedStoriesByUser watchedStory = new WatchedStoriesByUser();
+                watchedStory.StoriesId = StoryId;
+                watchedStory.someStory = someStory;
+                watchedStory.UserId = _userManager.GetUserId(User);
+                watchedStory.mainUser = await _userManager.GetUserAsync(User);
+                await _context.watchedStories.AddAsync(watchedStory);
+                await _context.SaveChangesAsync();
 
             }
-            return View(allStorysUser);
+            someStory.CountWathcedStory = _context.watchedStories.Where(x => x.StoriesId == StoryId).Count();
+            //_context.stories.Where(x => x.Id == StoryId).First().CountWathcedStory = _context.watchedStories.Where(x => x.StoriesId == StoryId).Count();
+            await _context.SaveChangesAsync();
+            return PartialView("_PartialStory",someStory);
         }
+        
     }
 }

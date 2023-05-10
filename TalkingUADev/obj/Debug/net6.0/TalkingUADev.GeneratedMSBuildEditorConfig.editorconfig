@@ -5,153 +5,164 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TalkingUADev
 build_property.RootNamespace = TalkingUADev
-build_property.ProjectDir = C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev\
+build_property.ProjectDir = C:\Users\Erik\source\repos\talkingHUB\TalkingUADev\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Erik\Desktop\talkingHubv\talkingua\TalkingUADev
+build_property.MSBuildProjectDirectory = C:\Users\Erik\source\repos\talkingHUB\TalkingUADev
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Chat/Menu.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Chat/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/GetPublication.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Chat/MenuNotFull.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxNZW51Tm90RnVsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/GetPublication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRQdWJsaWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Index.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/IndexDev.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/IndexDev.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleERldi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/IndexMain.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/IndexMain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleE1haW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Privacy.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Profile.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/ProfileDev.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/ProfileDev.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlRGV2LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Home/Profile_Main.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Home/Profile_Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlX01haW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/Error.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_Layout.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_PartialCountLikes.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialCountLikes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ291bnRMaWtlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_PartialSearching.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialListStories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsTGlzdFN0b3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialSearching.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU2VhcmNoaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_PartialShowPost.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialShowPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU2hvd1Bvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialStory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Story/CreatingStory.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Story/CreatingStory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlcQ3JlYXRpbmdTdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Story/ViewStories.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Story/ViewStories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlcVmlld1N0b3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/AddPublication.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/AddPublication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XEFkZFB1YmxpY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/GetMyFollowers.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/GetMyFollowers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XEdldE15Rm9sbG93ZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/GetMySubscribers.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/GetMySubscribers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XEdldE15U3Vic2NyaWJlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/SearchUsers.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/SearchUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XFNlYXJjaFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/ViewLikedPost.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/ViewLikedPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XFZpZXdMaWtlZFBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/UserEvent/ViewProfileUser.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/UserEvent/ViewProfileUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckV2ZW50XFZpZXdQcm9maWxlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/_ViewImports.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/_ViewStart.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_Layout3.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_Layout3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-t1dbsltntt
 
-[C:/Users/Erik/Desktop/talkingHubv/talkingua/TalkingUADev/Views/Shared/_LayoutMain.cshtml]
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_LayoutMain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-kuox22he38

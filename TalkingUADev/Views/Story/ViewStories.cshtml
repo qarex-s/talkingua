@@ -1,13 +1,72 @@
-﻿@model List<TalkingUADev.Models.UserStory>
+﻿@model TalkingUADev.Util.UtilStories
 <div class="container">
     <h1 class="text-center my-5">Stories</h1>
 
     <div class="row">
         @if (Model != null)
         {
-            foreach (var storyItem in Model)
+            <div class="container">
+            <div class="row" id="stories-list-In">
+            @foreach (var itemStory in Model.stories)
             {
-                <div class="col-md-4 mb-3">
+                 
+                    <p> <a class="story-link" href="@Url.Action("GetStoryById","Story",new {StoryId = itemStory.Id})">@itemStory.Id</a></p>
+                
+                
+            }
+        </div>
+         </div>
+        }
+        else
+        {
+            <h3>Stories not aviable</h3>
+        }
+    </div>
+    <hr />
+    <div>
+       <div >
+           <div class="row" id="stories-list-Out">
+                @*@if (Model.someStory != null)
+                {
+                    {await Html.RenderPartialAsync("_PartialStory",Model.someStory);}
+                }
+                else
+                {
+                    await Html.RenderPartialAsync("_PartialStory",Model.stories.First());
+                }*@
+            </div>
+       </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#stories-list-In').on('click', '.story-link', function (e) {
+            e.preventDefault(); // отменяем стандартное действие ссылки
+            var url = $(this).attr('href'); // получаем URL для запроса
+            $.ajax({
+                type: 'GET',
+                url: url,
+                success: function (data) {
+                    $('#stories-list-Out').html(data); 
+                },
+                error: function () {
+                    alert('Error loading story'); 
+                }
+            });
+        });
+    });
+</script>
+
+
+
+@*<div class="col-md-4 mb-3">
                     <div class="card">
                         <img src="@storyItem.ImageStory" class="card-img-top" alt="...">
 
@@ -16,17 +75,4 @@
                             <p class="card-text">Date: @storyItem.DateOfCreatingStory</p>
                         </div>
                     </div>
-                </div>
-            }
-        }
-        else
-        {
-            <h3>Stories not aviable</h3>
-        }
-    </div>
-
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                </div>*@
