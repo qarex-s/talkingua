@@ -19,11 +19,11 @@
                 <div class="subscribes">
                     <p>@Model.GetUserAppUtil().CountSubs</p>
                     
-                    <p><a href="/UserEvent/GetMyFollowers">Підписок</a></p>
+                    <p><a href="/UserEvent/GetMySubscribers">Підписників</a></p>
                 </div>
                 <div class="reader">
                     <p>@Model.GetUserAppUtil().CountFollows</p>
-                    <p><a href="/UserEvent/GetMySubscribers">Підписників</a></p>
+                    <p><a href="/UserEvent/GetMyFollowers">Підписок</a></p>
                 </div>
                 <div class="count-post">
                     <p id="posts_count">@Model.GetUserAppUtil().CountPosts</p>

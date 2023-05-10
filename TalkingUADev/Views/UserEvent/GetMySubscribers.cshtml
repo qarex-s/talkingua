@@ -1,4 +1,44 @@
-﻿@model List<TalkingUADev.Areas.Identity.Data.UserApp>
+﻿@{
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Мої підписки";
+}
+@model List<TalkingUADev.Areas.Identity.Data.UserApp>
+<link rel="stylesheet" href="~/css//styleFollowers.css">
+<div class="main">
+    <div class="container">
+        <h1>Ваші підписки</h1>
+        <div class="hr"></div>
+        <div class="subscribers">
+            @foreach (var userItem in Model)
+            {
+                <div class="subscriber">
+                    <div class="nickname">
+                        <div class="story">
+                            <div>
+                                <div>
+                                    <img src="@userItem.Image" alt="Avatar">
+                                </div>
+                            </div>
+                        </div>
+                        <p>@userItem.Name</p>
+                    </div>
+                    <div class="view-profile-btn">
+                        <a href="@Url.Action("ViewProfileUser", "UserEvent", new { userId = userItem.Id })">
+                            Переглянути профіль
+                        </a>
+                    </div>
+                </div>
+                <div class="line"></div>
+            }
+        </div>
+    </div>
+</div>
+<script src="~/js/scriptFollowers.js"></script>
+
+@*@model List<TalkingUADev.Areas.Identity.Data.UserApp>
 <div class="container mt-3">
     <h1>My subscribers</h1>
     <hr>
@@ -25,3 +65,4 @@
         </div>
     </div>
 </div>
+*@

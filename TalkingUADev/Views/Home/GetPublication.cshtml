@@ -39,7 +39,7 @@
                                 @foreach (var comment in Model.postComments)
                                 {
                                     <div class="comment">
-                                        <p>@@@comment.userApp.Name</p>
+                                        <a href="/UserEvent/ViewProfileUser?userId=@comment.userApp.Id"><p>@@@comment.userApp.Name</p></a>
                                         <p>@comment.TextMessage</p>
                                     </div>
                                 }

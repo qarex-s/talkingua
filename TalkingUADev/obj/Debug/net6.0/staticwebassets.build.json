@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nw5llkrwlEanBPzwLKzIMtNGCQx6vAHWdu/8URxw74E=",
+  "Hash": "C5I4bw7GdWhNksjwqxsYa5u1wuNdbCYQe72AbS5QPJo=",
   "Source": "TalkingUADev",
   "BasePath": "_content/TalkingUADev",
   "Mode": "Default",
@@ -1088,6 +1088,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleFollowers.css",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "css/styleFollowers.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleFollowers.css"
+    },
+    {
       "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleMaster.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
@@ -1173,6 +1190,23 @@
       "OriginalItemSpec": "wwwroot\\css\\styleProfile.css"
     },
     {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleViewLikedPosts.css",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "css/styleViewLikedPosts.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleViewLikedPosts.css"
+    },
+    {
       "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleViewPost.css",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
@@ -1188,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styleViewPost.css"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\css\\styleViewProfileUser.css",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "css/styleViewProfileUser.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleViewProfileUser.css"
     },
     {
       "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\favicon.ico",
@@ -1479,6 +1530,23 @@
       "OriginalItemSpec": "wwwroot\\js\\MyValidScript.js"
     },
     {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptFollowers.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/scriptFollowers.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scriptFollowers.js"
+    },
+    {
       "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptMaster.js",
       "SourceId": "TalkingUADev",
       "SourceType": "Discovered",
@@ -1562,6 +1630,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scriptProfile.js"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptViewLiked.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/scriptViewLiked.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scriptViewLiked.js"
+    },
+    {
+      "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\scriptViewProfile.js",
+      "SourceId": "TalkingUADev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\",
+      "BasePath": "_content/TalkingUADev",
+      "RelativePath": "js/scriptViewProfile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scriptViewProfile.js"
     },
     {
       "Identity": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\wwwroot\\js\\site.js",

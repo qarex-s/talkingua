@@ -1,0 +1,226 @@
+.main {
+    max-width: 1288px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 900px;
+    max-width: 1003px;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 316px;
+    margin: 0 auto;
+    padding: 53px 0 20px;
+}
+
+.head .nick {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.head .nick > div {
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.head .nick img {
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.head .nick p {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.head .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    width: 487px;
+}
+
+.subscribes p:nth-child(1),
+.reader p:nth-child(1),
+.count-post p:nth-child(1) {
+    line-height: 29px;
+    font-size: 24px;
+}
+
+.subscribes p:nth-child(2),
+.reader p:nth-child(2),
+.count-post p:nth-child(2) {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.button {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.follow {
+    background: #212121;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    height: 40px;
+    width: 188px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 0px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.unfollow {
+    background: #FFFFFF;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    height: 40px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 0px;
+    text-align: center;
+    color: #212121;
+    cursor: pointer;
+}
+
+.container .hr {
+    border: 1px solid #3A3A3A;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+}
+
+.posts {
+    width: 905px;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 37px;
+}
+
+.post {
+    width: 278px;
+    height: 240px;
+    padding: 3px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.post img {
+    object-fit: cover;
+}
+
+@media (max-width: 1003px) {
+    .container .hr {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 915px) {
+    .posts {
+        padding: 20px;
+        height: auto;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .post:nth-child(odd) {
+        position: relative;
+        left: 30px;
+    }
+
+    .post:nth-child(even) {
+        position: relative;
+        left: -30px;
+    }
+}
+
+@media (max-width: 710px) {
+    .post:nth-child(odd) {
+        position: relative;
+        left: 10px;
+    }
+
+    .post:nth-child(even) {
+        position: relative;
+        left: -10px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container .hr {
+        margin-top: 20px;
+    }
+
+    .head {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        height: 270px;
+        min-height: 0;
+    }
+
+    .head .nick {
+        margin-bottom: 15px;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .subscribes p:nth-child(1),
+    .reader p:nth-child(1),
+    .count-post p:nth-child(1) {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .subscribes p:nth-child(2),
+    .reader p:nth-child(2),
+    .count-post p:nth-child(2) {
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post:nth-child(odd),
+    .post:nth-child(even) {
+        position: static;
+    }
+}

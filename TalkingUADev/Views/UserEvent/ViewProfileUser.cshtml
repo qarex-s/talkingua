@@ -1,68 +1,72 @@
-﻿@model TalkingUADev.Util.UtilUserPost
+﻿@{
+    Layout = "_Layout";
+}
+
+@model TalkingUADev.Util.UtilUserPost
 @using TalkingUADev.Models
-<div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-4">
-            <form action="FollowToUser" method="post">
+<link rel="stylesheet" href="~/css/styleViewProfileUser.css">
 
-            <div class="text-center">
-                <img class="circular-image circular-image-large shadow" src="@Model.GetUserAppUtil().Image" alt="Image">
-                    <h3>@@@Model.GetUserAppUtil().Name</h3>
-                <hr class="my-4">
-
-                    <div class="d-flex justify-content-center">
-                        <div class="me-4">
-                            <div class="fw-bold">Subs</div>
-                            <div>@Model.GetUserAppUtil().CountSubs</div>
-                        </div>
-                        <div class="me-4">
-                            <div class="fw-bold">Follows</div>
-                            <div>@Model.GetUserAppUtil().CountFollows</div>
-                        </div>
-                        <div>
-                            <div class="fw-bold">Posts</div>
-                            <div>@Model.GetUserAppUtil().CountPosts</div>
-                        </div>
-                        <input type="hidden" name="userId" value="@Model.GetUserAppUtil().Id" />                   
+<div class="main">
+    <div class="container">
+        <div class="head">
+            <div class="nick">
+                <div>
+                    <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
+                </div>
+                <p>@@@Model.GetUserAppUtil().Name</p>
             </div>
+            <div class="info">
+                <div class="subscribes">
+                    <p>@Model.GetUserAppUtil().CountFollows</p>
+                    <p>Підписок</p>
+                </div>
+                <div class="reader">
+                    <p>@Model.GetUserAppUtil().CountSubs</p>
+                    <p>Підписників</p>
+                </div>
+                <div class="count-post">
+                    <p id="posts_count">@Model.GetUserAppUtil().CountPosts</p>
+                    <p>Публікації</p>
+                </div>
+            </div>
+            <form action="FollowToUser" method="post">
+                <div class="button">
+                    <input type="hidden" name="userId" value="@Model.GetUserAppUtil().Id" />
                     @{
                         if (!Model.GetUserIsFollowed())
                         {
-                            <div class="d-flex justify-content-center mt-3">
-                                <button type="submit" class="btn btn-primary">Follow</button>
-                            </div>
+                            <button type="submit" class="follow">Підписатися</button>
                         }
                         else
                         {
-                            <div class="d-flex justify-content-center mt-3">
-                                <button type="submit" class="btn btn-danger">UnFollow</button>
-                            </div>
+                            <button type="submit" class="unfollow">Відписатися</button>
                         }
                     }
-                    
-                </form>
-            </div>
-        </div>
-        
-    </div>
-    <hr class="my-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        @if (Model.GetUserPostUtil() != null)
-        {
-            @foreach (UserPost item in Model.GetUserPostUtil())
-            {
-                <div class="col">
-                    <div class="card">
-                        <img src="@item.Image" class="card-img-top" alt="@item.Name">
-                        <div class="card-body">
-                            <h5 class="card-title">@item.Name</h5>
-                            <p class="card-text">Description: @item.Desc</p>
-                            <p class="card-text">Likes: @item.Likes</p>
-                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">View Publication</a>
-                        </div>
-                    </div>
                 </div>
+            </form>
+        </div>
+        <div class="hr"></div>
+        <div class="posts">
+            @{
+                if (Model.GetUserPostUtil().Count >= 1)
+                {
+                    @foreach (UserPost item in Model.GetUserPostUtil())
+                    {
+                        <div class="post">
+                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
+                                <img src="@item.Image" alt="Post">
+                            </a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <h3>Add some posts</h3>
+                }
             }
-        }
+
+        </div>
     </div>
 </div>
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script src="~/js/scriptViewProfile.js"></script>
