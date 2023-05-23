@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cKSL8LxuOQkdoAXdIpi/XUhL2XBqVcX6MJ+R17HSmjXygzNTDODX2do+cd6yqE3joRZHLy+aFSERVh67PzYdUQ==",
+  "dgSpecHash": "acMaG5W5EwsoNieoO340Xkay6SrQ/9njxi2//wb1OXgh/GGaH+VVf8BBXASYnKeYwZ4lmx5pAllyE+ppNUSlLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Erik\\source\\repos\\talkingHUB\\TalkingUADev\\TalkingUADev.csproj",
   "expectedPackageFiles": [
@@ -184,7 +184,9 @@
     "C:\\Users\\Erik\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Erik\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Erik\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Erik\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Erik\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Erik\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Erik\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }

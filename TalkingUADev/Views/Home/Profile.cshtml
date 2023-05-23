@@ -11,14 +11,22 @@
         <div class="head">
             <div class="nick">
                 <div>
-                    <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
+                    <a asp-action="CreatingStory" asp-controller="Story">
+                        @if (Model.GetUserAppUtil().ImageTitle != null)
+                        {
+                            <img src="@($"/UsersAvatars/UserPostBy{Model.GetUserAppUtil().Email}/{Model.GetUserAppUtil().ImageTitle}")" alt="">
+                        }
+                        else
+                        {
+                            <img src="@($"/Img/def_ava.png")" alt="">
+                        }
+                    </a>
                 </div>
                 <p>@@@Model.GetUserAppUtil().Name</p>
             </div>
             <div class="info">
                 <div class="subscribes">
                     <p>@Model.GetUserAppUtil().CountSubs</p>
-                    
                     <p><a href="/UserEvent/GetMySubscribers">Підписників</a></p>
                 </div>
                 <div class="reader">
@@ -30,7 +38,12 @@
                     <p>Публікації</p>
                 </div>
             </div>
+            <div class="buttons">
+                <a asp-controller="ChangingAction" asp-action="GetProfileForEdit"><button class="follow">Редагувати профіль</button></a>
+                <a asp-controller="ChangingAction" asp-action="GetPublicationForEdit"><button class="follow">Редагувати пости</button></a>
+            </div>
         </div>
+
         <div class="hr"></div>
         <div class="posts">
             @{
@@ -39,9 +52,16 @@
                     @foreach (UserPost item in Model.GetUserPostUtil())
                     {
                         <div class="post">
-                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
-                                <img src="@item.Image" alt="Post">
-                            </a>
+                            @if (item.ImageTitle != null)
+                            {
+                                <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
+                                    <img src="@($"/UsersStaticFiles/UserPostBy{Model.GetUserAppUtil().Email}/{item.ImageTitle}")" alt="Post">
+                                </a>
+                            }
+                            else
+                            {
+                                <img src="~/Img/error_image.png" alt="Post">
+                            }
                         </div>
                     }
                 }

@@ -5,7 +5,10 @@ namespace TalkingUADev.Models
     public class UserStory
     {
         public int Id { get; set; }
-        public string ImageStory { get; set; }
+        public string? ImageStory { get; set; } = null;
+        public string? ImageTitle { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
         public int CountWathcedStory { get; set; } = 0;
         public DateTime DateOfCreatingStory { get; set; } = DateTime.Now;
         [ForeignKey("listUserStory")]

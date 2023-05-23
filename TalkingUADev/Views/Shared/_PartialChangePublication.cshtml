@@ -1,0 +1,32 @@
+﻿@using TalkingUADev.ViewModels;
+@model UserPost
+<link rel="stylesheet" href="~/css/styleAddPublication.css"/>
+<h1>Редагувати публікацію</h1>
+<div class="hr"></div>
+<form asp-action="ChangePublication" asp-controller="ChangingAction" enctype="multipart/form-data" method="post">
+    <div class="inputs">
+        <div class="input-photo">
+            <div class="view-photo">
+                <img class="input-file-list-img" src="@($"/UsersStaticFiles/UserPostBy{Model.user.Email}/{Model.ImageTitle}")">
+            </div>
+        </div>
+        <div class="inputs-text">
+            <input asp-for="Name"  type="text" id="username" value="@Model.Name" placeholder="Заголовок публікації" aria-required="true" />
+            <span asp-validation-for="Name"></span>
+
+            <textarea asp-for="Desc" style="max-height: 150px" placeholder="Опис публікації" aria-required="true"></textarea>
+            <span asp-validation-for="Desc" class="text-danger"></span>
+
+            <textarea asp-for="Tags" placeholder="Теги публікації" aria-required="true"></textarea>
+            <span asp-validation-for="Tags"></span>
+
+            <textarea asp-for="Position" class="textareaClass" placeholder="Місце" aria-required="true"></textarea>
+            <span asp-validation-for="Position"></span>
+            <div class="form-group mb-3">
+                <input type="hidden" asp-for="UserPostId" id="username" value="@Model.UserPostId">
+            </div>
+            <input class="submit" type="submit" id="btn-save" value="Додати">
+        </div>
+    </div>
+</form>
+<script src="~/js/scriptChangePublication.js"></script>

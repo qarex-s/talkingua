@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Erik\source\repos\talkingHUB\TalkingUADev
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/Account/_ViewImports.cshtml]
@@ -41,6 +49,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/ChangingAction/GetProfileForEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdpbmdBY3Rpb25cR2V0UHJvZmlsZUZvckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/ChangingAction/GetPublicationForEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdpbmdBY3Rpb25cR2V0UHVibGljYXRpb25Gb3JFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Chat/Menu.cshtml]
@@ -95,8 +111,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialChangePublication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ2hhbmdlUHVibGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialChatMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ2hhdE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialCountLikes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ291bnRMaWtlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialGetPublication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsR2V0UHVibGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Erik/source/repos/talkingHUB/TalkingUADev/Views/Shared/_PartialListStories.cshtml]

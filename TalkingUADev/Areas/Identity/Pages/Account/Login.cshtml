@@ -1,4 +1,37 @@
-﻿
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+<link rel="stylesheet" href="~/css/styleRegister.css" />
+
+<div class="container">
+    <div class="main">
+        <h1>#Авторизація</h1>
+        <form id="account" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="register-inputs" style="height: 110px">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" required>
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Пароль" required>
+            </div>
+            <div class="hr"></div>
+            <div class="submit-buttons">
+                <button id="login-submit" type="submit">Увійти</button>
+                <button><a asp-area="Identity" asp-page="/Account/Register">Немає аккаунту</a></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@*
 @page
 @model LoginModel
 
@@ -84,3 +117,4 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+*@

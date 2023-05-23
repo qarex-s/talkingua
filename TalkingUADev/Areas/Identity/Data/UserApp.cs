@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -10,7 +11,10 @@ namespace TalkingUADev.Areas.Identity.Data;
 // Add profile data for application users by adding properties to the UserApp class
 public class UserApp : IdentityUser
 {
-    public string Image { get; set; }
+    public string? Image { get; set; } = null;
+    public string? ImageTitle { get; set; }
+    [NotMapped]
+    public IFormFile ImageFile { get; set; }
     public string Name{ get; set; }
     public string FullName { get; set; }
     public string City { get; set; }

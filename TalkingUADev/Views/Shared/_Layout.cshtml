@@ -1,65 +1,94 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using TalkingUADev.Areas.Identity.Data
+@inject SignInManager<UserApp> SignInManager
+@inject UserManager<UserApp> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TalkingUADev</title>
-   
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/styleMaster.css">
 </head>
 <body>
     <header>
-        
-        <nav class="header__body">
-            <div class="nav1">
-                <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
-                <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
-                <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
-                <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
-            </div>
-            <div class="logo">
-                <img src="~/Img/Logo.png" alt="Logo">
-            </div>
-            <div class="nav2">
-                <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
-                <a asp-area="" asp-controller="Chat" asp-action="Menu">Повідомлення</a>
-                <a asp-area="" asp-controller="" asp-action="">Вихід</a>
-            </div>
-            <div class="dropdown">
-                <div class="burger">
-                    <span></span>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <nav class="header__body">
+                <div class="nav1">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
+                    <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
+                    <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
                 </div>
-                <nav class="menu">
-                    <ul class="list">
-                        <li class="link">
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
-                        </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
-                        </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
-                        </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
-                        </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
-                        </li>
-                        <li class="link">
-                            <a asp-area="" asp-controller="" asp-action="">Повідомлення</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-            </div>
+                <div class="logo">
+                    <img src="~/Img/Logo.png" alt="Logo">
+                </div>
+                <div class="nav2">
+                    <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
+                    <a asp-area="" asp-controller="Chat" asp-action="Menu">Повідомлення</a>
+                    <a asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">Вихід</a>
+                </div>
+                <div class="dropdown">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <nav class="menu">
+                        <ul class="list">
+                            <li class="link">
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
+                            </li>
+                            <li class="link">
+                                <a asp-area="" asp-controller="Home" asp-action="Profile">Профіль</a>
+                            </li>
+                            <li class="link">
+                                <a asp-area="" asp-controller="UserEvent" asp-action="SearchUsers">Пошук</a>
+                            </li>
+                            <li class="link">
+                                <a asp-area="" asp-controller="UserEvent" asp-action="ViewLikedPost">Ваші вподобання</a>
+                            </li>
+                            <li class="link">
+                                <a asp-area="" asp-controller="UserEvent" asp-action="AddPublication">Додати пост</a>
+                            </li>
+                            <li class="link">
+                                <a asp-area="" asp-controller="Chat" asp-action="Menu">Повідомлення</a>
+                            </li>
+                            <li>
+                                <a asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">Вихід</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </nav>
-            <partial name="_LoginPartial" />
+        }
+        else
+        {
+            <div class="header">
+                <img src="~/Img/Logo.png" alt="Logo">
+                @if (ViewData["Title"] == "Register")
+                {
+                    <button>
+                        <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+
+                    </button>
+                }
+                else
+                {
+                    <button>
+                        <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </button>
+                }
+            </div>
+        }
     </header>
-        <main>
-            @RenderBody()
-        </main>
+    <main>
+        @RenderBody()
+    </main>
     <footer>
         <div class="footer">
             <a href="#">About US</a>
@@ -67,7 +96,7 @@
             <a>All copyright reserved 2023</a>
         </div>
     </footer>
-  
+
 
     <script src="~/js/jquery-3.6.3Master.min.js"></script>
     <script src="~/js/scriptMaster.js"></script>

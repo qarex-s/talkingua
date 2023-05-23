@@ -3,13 +3,13 @@
 }
 
 @{
-    ViewData["Title"] = "Мої підписки";
+    ViewData["Title"] = "Мої підписники";
 }
 @model List<TalkingUADev.Areas.Identity.Data.UserApp>
 <link rel="stylesheet" href="~/css//styleFollowers.css">
 <div class="main">
     <div class="container">
-        <h1>Ваші підписки</h1>
+        <h1>Ваші підписники</h1>
         <div class="hr"></div>
         <div class="subscribers">
             @foreach (var userItem in Model)

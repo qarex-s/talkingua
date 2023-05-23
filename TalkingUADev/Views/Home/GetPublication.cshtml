@@ -14,15 +14,30 @@
             <div class="posts">
                 <div class="post">
                     <div class="nickname">
-                        <div class="story">
+                        <div class="story" >
                             <div>
-                                <img src="@Model.userPost.user.Image" />
+                                <div>  @if (@Model.userPost.user.ImageTitle != null)
+                                {
+                                    <img src="@($"/UsersAvatars/UserPostBy{@Model.userPost.user.Email}/{@Model.userPost.user.ImageTitle}")" alt="Photo by: @Model.userPost.user.Name">
+                                }
+                                else
+                                {
+                                    <img src="@($"/Img/def_ava.png")" alt="">
+                                }</div>
+                              
                             </div>
                         </div>
                         <p>@@@Model.userPost.user.Name</p>
                     </div>
                     <div class="photo">
-                        <img src="@Model.userPost.Image" />
+                        @if (Model.userPost.ImageTitle != null)
+                        {
+                            <img src="@($"/UsersStaticFiles/UserPostBy{Model.userPost.user.Email}/{Model.userPost.ImageTitle}")" />
+                        }
+                        else
+                        {
+                            <img src="~/Img/error_image.png" alt="Post">
+                        }
                     </div>
                     <div class="description">
                         <div class="head">
@@ -58,8 +73,13 @@
                     <div class="likes-info">
                         <div class="line"></div>
                         <div class="likes like-button" style="cursor:pointer" data-post-id="@Model.userPost.UserPostId">
+
                             <img src="~/Img/Like.png" alt="Like">
-                            <p class="like-count"> @{await Html.RenderPartialAsync("_PartialCountLikes",Model.userPost);}</p>
+                            <p class="like-count">
+                                @{
+                                    await Html.RenderPartialAsync("_PartialCountLikes", Model.userPost);
+                                }
+                            </p>
                             <p>вподобайок</p>
                         </div>
                     </div>
@@ -72,8 +92,8 @@
 <script src="~/js/scriptViewPost.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $('.like-button').click(function () {
+    $(document).ready(function() {
+        $('.like-button').click(function() {
             var postId = $(this).data('post-id');
             var button = $(this);
 
@@ -81,7 +101,7 @@
                 type: "POST",
                 url: '@Url.Action("LikePost", "UserEvent")',
                 data: { postId: postId },
-                success: function (result) {
+                success: function(result) {
                     $('#partial-count-likes-' + postId).html(result);
                 }
             });

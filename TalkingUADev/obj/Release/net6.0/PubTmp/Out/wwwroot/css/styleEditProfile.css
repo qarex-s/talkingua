@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+html {
+    background-color: #cecece;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+header,
+footer {
+    height: 82px;
+    background-color: #181819;
+}
+
+main {
+    max-width: 1288px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 55px;
+    width: 1003px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.hr {
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 0;
+    margin-bottom: 35px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.input-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+    .input-file span {
+        float: left;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        color: rgba(0, 0, 0, 0.5);
+        background-color: #f0f0f0;
+        border-bottom: 2px solid #0085FF;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        height: 40px;
+        transition: background-color 0.2s;
+        padding: 0 23px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .input-file input[type=file] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+        .input-file input[type=file]:focus + span {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+
+    .input-file:hover span {
+        background-color: #e5e5e5;
+    }
+
+    .input-file:active span {
+        background-color: #d5d5d5;
+    }
+
+    .input-file input[type=file]:disabled + span {
+        background-color: #eee;
+    }
+
+.view-photo {
+    width: 539px;
+    height: 539px;
+    box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
+    border: none;
+    border-bottom: 2px solid #0085FF;
+    border-radius: 50%;
+    background: url(../images/add_a_photo.png) no-repeat center center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .view-photo img {
+        object-fit: cover;
+    }
+
+.inputs-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 35px;
+}
+
+.nick,
+.now_pass,
+.new_pass {
+    width: 409px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #0085FF;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+    background: #F0F0F0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 0 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit {
+    width: 150px;
+    height: 42px;
+    background: #212121;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+@media (max-width: 1030px) {
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    .hr {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .inputs {
+        padding: 0 10px;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .nick,
+    .now_pass,
+    .new_pass {
+        width: 284px;
+    }
+}
+
+@media (max-width: 900px) {
+    .inputs {
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-photo,
+    .inputs-text {
+        gap: 25px;
+    }
+
+    .inputs-text {
+        height: 300px;
+    }
+
+    .nick,
+    .now_pass,
+    .new_pass {
+        width: 539px;
+    }
+}
+
+@media (max-width: 567px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .view-photo {
+        width: 400px;
+        height: 400px;
+    }
+
+        .view-photo img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .nick,
+    .now_pass,
+    .new_pass {
+        width: 100%;
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .view-photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .nick,
+    .now_pass,
+    .new_pass {
+        min-width: 300px;
+    }
+}

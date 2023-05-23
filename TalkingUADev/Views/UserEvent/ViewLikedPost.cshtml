@@ -7,19 +7,26 @@
 }
 
 @model List<TalkingUADev.Models.UserPost>
-<link rel="stylesheet" href="~/css//styleViewLikedPosts.css">
+<link rel="stylesheet" href="~/css/styleViewLikedPosts.css">
 <div class="main">
     <div class="container">
         <div class="hr"></div>
         <div class="posts">
-            @if (Model.Count>0)
+            @if (Model.Count > 0)
             {
                 @foreach (var postItem in Model)
                 {
                     <div class="post">
-                        <a href="@Url.Action("GetPublication", "Home", new {Id = postItem.UserPostId})" class="btn btn-primary">
-                            <img src="@postItem.Image" alt="Post">
-                        </a>
+                        @if (postItem.ImageTitle != null)
+                        {
+                            <a href="@Url.Action("GetPublication", "Home", new {Id = postItem.UserPostId})" class="btn btn-primary">
+                                <img src="@($"/UsersStaticFiles/UserPostBy{postItem.user.Email}/{postItem.ImageTitle}")" alt="Post">
+                            </a>
+                        }
+                        else
+                        {
+                            <img src="~/Img/error_image.png" alt="Post">
+                        }
                     </div>
                 }
             }
@@ -32,22 +39,3 @@
 </div>
 <script src="~/js/jquery-3.6.3Master.min.js"></script>
 <script src="~/js/scriptViewLiked.js"></script>
-@*@model List<TalkingUADev.Models.UserPost>
-<div class="container mt-3">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        @foreach (var postItem in Model)
-        {
-            <div class="col">
-                <div class="card h-100">
-                    <img src="@postItem.Image" class="card-img-top" alt="@postItem.Name">
-                    <div class="card-body">
-                        <h5 class="card-title">@postItem.Name</h5>
-                        <p class="card-text">@postItem.Tags</p>
-                        <p class="card-text">Likes: @postItem.Likes</p>
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
-</div>
-*@

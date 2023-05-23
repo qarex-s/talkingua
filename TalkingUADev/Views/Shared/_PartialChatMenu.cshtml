@@ -1,0 +1,86 @@
+﻿@using TalkingUADev.Areas.Identity.Data;
+@model TalkingUADev.Util.UtilChat
+<link rel="stylesheet" href="~/css/styleMessenger.css">
+<div class="messages">
+
+    @if (Model.messages != null)
+    {
+        @foreach (var itemChatMess in Model.messages)
+        {
+            if (itemChatMess.mainUserSender == Model.mainUser)
+            {
+                <div class="our-message">
+                    <div class="img">
+                        @if ( itemChatMess.Chat.MainUser.ImageTitle!= null   )
+                        {   if(itemChatMess.Chat.MainUser == Model.mainUser)
+                            {
+                                <div class="img">
+                                    <img src="@($"/UsersAvatars/UserPostBy{itemChatMess.Chat.MainUser.Email}/{itemChatMess.Chat.MainUser.ImageTitle}")" alt="Avatar">
+                                </div>
+                            }else
+                            {
+                                <div class="img">
+                                    <img src="@($"/UsersAvatars/UserPostBy{itemChatMess.Chat.SecondUser.Email}/{itemChatMess.Chat.SecondUser.ImageTitle}")" alt="Avatar">
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="img">
+                                <img src="@($"/Img/def_ava.png")" alt="Avatar">
+                            </div>
+                        }
+                    </div>
+                    <div class="message">
+                        <p>
+                            @itemChatMess.MessageText
+                        </p>
+                    </div>
+                    <div class="time">
+                        <p>@itemChatMess.DateOfCreatingMessage.ToString("HH:mm")</p>
+                    </div>
+                </div>
+            }
+            else
+            {
+
+
+                <div class="their-message">
+                    <div class="img">
+
+                        @if (!Model.someChat.SecondUser.ImageTitle.Contains("def_ava") && Model.someChat.SecondUser!=Model.mainUser)
+                        {
+                             if(itemChatMess.Chat.MainUser != Model.mainUser)
+                            {
+                                <div class="img">
+                                    <img src="@($"/UsersAvatars/UserPostBy{itemChatMess.Chat.MainUser.Email}/{itemChatMess.Chat.MainUser.ImageTitle}")" alt="Avatar">
+                                </div>
+                            }else
+                            {
+                                <div class="img">
+                                    <img src="@($"/UsersAvatars/UserPostBy{itemChatMess.Chat.SecondUser.Email}/{itemChatMess.Chat.SecondUser.ImageTitle}")" alt="Avatar">
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="img">
+                                <img src="@($"/Img/def_ava.png")" alt="Avatar">
+                            </div>
+                        }
+                    </div>
+                    <div class="message">
+                        <p>
+                            @itemChatMess.MessageText
+                        </p>
+                    </div>
+                    <div class="time">
+                        <p>@itemChatMess.DateOfCreatingMessage.ToString("HH:mm")</p>
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>
+
+

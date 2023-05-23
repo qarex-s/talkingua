@@ -202,7 +202,9 @@ namespace TalkingUADev.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -451,7 +453,9 @@ namespace TalkingUADev.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Likes")
@@ -495,7 +499,9 @@ namespace TalkingUADev.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImageStory")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ListUserStoryId")

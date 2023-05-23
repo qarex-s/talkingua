@@ -1,0 +1,90 @@
+.container {
+    max-width: 1288px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 70px;
+    min-height: 920px;
+}
+
+.title {
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 500;
+    top: 28px;
+    color: #000000;
+    text-align: center;
+    padding: 28px auto;
+}
+
+hr {
+    width: 930px;
+    border: 1px solid #000000;
+    margin: auto;
+    margin-top: 28px;
+}
+
+.about_us {
+    width: 930px;
+    padding-top: 36px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.adopter {
+    padding-top: 36px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+
+.spam {
+    padding-top: 28px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    width: 903px;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width:1003px) {
+    .container {
+        width: 100%;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .about_us {
+        width: 90%;
+    }
+
+    .spam {
+        width: 90%;
+    }
+}
+
+@media (max-width: 849px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .about_us {
+        font-size: 14px;
+    }
+
+    .adopter {
+        font-size: 21px;
+    }
+
+    .spam {
+        font-size: 14px;
+    }
+}

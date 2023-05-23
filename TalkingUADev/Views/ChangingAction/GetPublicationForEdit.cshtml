@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model List<UserPost>
+@*
+<div class="row" id="page-edit-delete">
+
+    @if (Model.Count > 0)
+    {
+        <div id="publication-for-edit">
+            @foreach (var itemPost in Model)
+            {
+                <div class="col-md-3 mb-1">
+                    <div class="card">
+                        <img src="@($"/UsersStaticFiles/UserPostBy{itemPost.user.Email}/{itemPost.ImageTitle}")" class="card-img-top" alt="Photo Card">
+                        <div class="card-body">
+                            <h5 class="card-title">@itemPost.Name</h5>
+                            <p class="card-text">Like: @itemPost.Likes</p>
+                            <p class="card-text"><small class="text-muted">Published @itemPost.DateOfCreatingPost</small></p>
+                            <form class="form-inline" onsubmit="return false">
+                                <input type="hidden" name="postId" value="@itemPost.UserPostId" />
+                                <button type="button" class="btn btn-primary" onclick="editPost($(this))">Edit</button>
+                                <button type="button" class="btn btn-danger" onclick="deletePost($(this))">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+    else
+    {
+        <h5 class="card-title">You need to add any publication</h5>
+
+    }
+</div>
+*@
+<link rel="stylesheet" href="~/css/styleListPostEdit.css">
+<div class="container" id="page-edit-delete">
+    <h1>Список публікацій для редагування</h1>
+    <div class="hr"></div>
+    <div class="list">
+        @if (Model.Count > 0)
+        {
+            @foreach (var itemPost in Model)
+            {
+                <div class="list-item">
+
+                    <div class="data">
+                        <div class="photo">
+                            <img src="@($"/UsersStaticFiles/UserPostBy{itemPost.user.Email}/{itemPost.ImageTitle}")" class="card-img-top" alt="Photo Card">
+                        </div>
+                        <div class="info">
+
+                            <p>@itemPost.Name</p>
+                            <p>Вподобайок: @itemPost.Likes</p>
+                            <p>Опубліковано @itemPost.DateOfCreatingPost</p>
+                        </div>
+                    </div>
+                    <form class="form-inline" onsubmit="return false">
+                        <input type="hidden" name="postId" value="@itemPost.UserPostId" />
+                        <div class="buttons">
+                            <button type="button" class="btn-change" onclick="editPost($(this))">Редагувати</button>
+                            <button type="button" class="btn-delete" onclick="deletePost($(this))">Видалити</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hr"></div>
+            }
+        }
+        else
+        {
+            <h5 class="card-title">You need to add any publication</h5>
+
+        }
+
+
+        <script src="~/js/jquery-3.6.3Master.min.js"></script>
+        <script src="~/js/scriptListPostEdit.js"></script>
+        <script>
+            function editPost(button) {
+                var form = $(button).closest('form');
+                var postId = form.find('[name="postId"]').val();
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("ChangePublication","ChangingAction")',
+                    data: { postId: postId },
+                    success: function(result) {
+                        $('#page-edit-delete').html(result);
+                    },
+                    error: function(xhr, status, error) {
+                        alert("деяка помилка при зміні поста");
+                    }
+                });
+            }
+            function deletePost(button) {
+                var form = $(button).closest('form');
+                var postId = form.find('[name="postId"]').val();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("DeletePublication","ChangingAction")',
+                    data: { postId: postId },
+                    success: function(result) {
+                        alert("successfulldel");
+                        $('#page-edit-delete').html(result);
+                        let posts = document.querySelectorAll('.photo img');
+                        posts.forEach((elem) => {
+                            console.log('acaca');
+                            if (elem.height / elem.width > 1.1465) {
+                                elem.style.width = '100%';
+                            } else if (elem.height / elem.width < 1.1465) {
+                                elem.style.width = '100%';
+                            } else {
+                                elem.style.width = '100%';
+                            }
+                        })
+                    },
+                    error: function(xhr, status, error) {
+                        alert("деяка помилка при видаленні поста");
+                    }
+                });
+            }
+        </script>

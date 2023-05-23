@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "_Layout";
+}
+@using TalkingUADev.ViewModels
+@model TalkingUADev.Areas.Identity.Data.UserApp
+<link rel="stylesheet" href="~/css/styleEditProfile.css">
+
+<div class="container">
+    <h1>Змінити дані</h1>
+    <div class="hr"></div>
+    <form enctype="multipart/form-data" action="SetProfileNewProp" method="post">
+        <div class="inputs">
+            <div class="input-photo">
+                <label class="input-file">
+                    <input type="file" name="imageUser" multiple accept="image/jpg,image/jpeg,image/png">
+                    <span>Змінити дані профілю</span>
+                </label>
+                <div class="view-photo">
+                    @if (Model.ImageTitle != null)
+                    {
+                        <img src="@($"/UsersAvatars/UserPostBy{Model.Email}/{Model.ImageTitle}")" />
+                    }
+                    else
+                    {
+                        <img src="@($"/Img/def_ava.png")" alt="">
+                    }
+
+                </div>
+            </div>
+            <div class="inputs-text">
+                <input type="text" class="nick" placeholder="Змінити ім'я профілю" name="UserName" value="@Model.Name" id="">
+                <input type="password" class="new_pass" placeholder="Поточний пароль" name="oldPass" value="" id="">
+                <input type="password" class="new_pass" placeholder="Новий пароль" name="newPass" value="" id="">
+                <input class="new_pass" type="password" placeholder="Підтвердити новий пароль" name="confirmPass" id="">
+                <input class="submit" type="submit" value="Додати">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script src="~/js/scriptEditProfile.js"></script>

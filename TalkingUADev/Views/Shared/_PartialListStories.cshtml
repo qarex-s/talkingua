@@ -1,23 +1,55 @@
 ﻿@model TalkingUADev.Util.UtilStories
 
 
-<div class="modal-header">
-    <p>@@@Model.followerUser.Name</p>
 
-    <a id="close" style="z-index: 1100" href="https://www.google.com">Close</a>
+@if (Model == null)
+{
+    <script>
+        alert("User not publicated story last 24 hour");
+        $(document).ready(function() {
+            $('#openModal').css("opacity", 0);
+            $('body').css("overflow", "visible");
+            $('body').css("pointer-events", "auto");
+            $('#openModal').css("marginLeft", "0px");
+        });
+    </script>
+}
+else
+{
+    <div class="modal-header">
+        <p>@@@Model.followerUser.Name</p>
 
-</div>
-<div class="modal-body">
+        <a id="closeAjax" style="z-index: 1100" href="https://www.google.com">Close</a>
+
+    </div>
     <div class="modal-body">
-        <div class="vector-left"></div>
-        <div class="story-img">
-            <img src="@Model.someStory.ImageStory">
+        <div class="modal-body">
+            <div class="vector-left"></div>
+            <div class="story-img">
+                <img id="close" src="@($"/UsersStoryFile/UserPostBy{Model.followerUser.Email}/{Model.someStory.ImageTitle}")">
+
+            </div>
+            <div class="vector-right"></div>
         </div>
-        <div class="vector-right"></div>
+
     </div>
 
-</div>
+    <script>
 
+        $(document).ready(function() {
+
+
+            $('#close').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#openModal').css("opacity", 0);
+                $('body').css("overflow", "visible");
+                $('#openModal').css("marginLeft", "0px");
+            });
+        });
+
+    </script>
+}
 
 
 

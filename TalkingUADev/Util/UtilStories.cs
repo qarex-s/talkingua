@@ -6,7 +6,7 @@ namespace TalkingUADev.Util
     public class UtilStories
     {
         public List<UserStory> stories { get; set; }
-        public UserStory someStory { get; set; }
+        public UserStory? someStory { get; set; }
         public UserApp followerUser { get; set; }
 
     }

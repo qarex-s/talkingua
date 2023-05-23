@@ -1,0 +1,108 @@
+.container {
+    width: 1280px;
+    height: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("../Img/Фон.png");
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+}
+
+.main {
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px 0px #00000066;
+    width: 448px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-bottom: 14px;
+}
+
+.register-inputs {
+    width: 306px;
+    height: 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto 25px;
+}
+
+.register-inputs input {
+    width: 306px;
+    height: 46px;
+    background: #F0F0F0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 15px;
+    border-bottom: 1px solid #0085FF;
+    padding-left: 17px;
+    padding-right: 10px;
+}
+
+.main .hr {
+    width: 230px;
+    margin: 0 auto;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+.submit-buttons {
+    width: 306px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+}
+
+.submit-buttons button,
+.submit-buttons a {
+    width: 131px;
+    height: 42px;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        height: 100%;
+    }
+
+    .main {
+        box-shadow: none;
+    }
+
+    .main {
+        background: none;
+    }
+}
+
+@media (max-width: 520px) {
+    footer {
+        position: relative;
+        top: -50px;
+    }
+}

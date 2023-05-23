@@ -1,8 +1,48 @@
-﻿@using TalkingUADev.ViewModels
+﻿@{
+    Layout = "_Layout";
+}
+
+@using TalkingUADev.ViewModels
 @model ModelPost
-<div class="row">
+<link rel="stylesheet" href="~/css/styleAddPublication.css">
+<div class="container">
+    <h1>Додати публікацію</h1>
+    <div class="hr"></div>
+    <form id="registerForm" enctype="multipart/form-data" action="AddPublication" method="post">
+        <div class="inputs">
+            <div class="input-photo">
+                <label class="input-file">
+                    <input type="file" asp-for="ImageFile" accept="image/jpg,image/jpeg,image/png" aria-required="true"  />
+                    <span >Виберіть файл</span>
+                </label>
+                <div class="view-photo"></div>
+            </div>
+            <div class="inputs-text">
+                @*<input type="text" placeholder="Заголовок публікації" >*@
+                <input asp-for="Name"  type="text" placeholder="Заголовок публікації" aria-required="true" />
+                <span ></span>
+
+                @*<textarea placeholder="Опис публікації" name="" id=""></textarea>*@
+                <textarea asp-for="Desc"  placeholder="Опис публікації" aria-required="true" ></textarea>
+                <span ></span>
+
+                @*<textarea placeholder="Теги публікації"></textarea>*@
+                <textarea asp-for="Tags"  placeholder="Теги публікації" aria-required="true" ></textarea>
+                <span ></span>
+
+                @*<textarea placeholder="Місце" ></textarea>*@
+                <textarea asp-for="Position"  class="textareaClass" placeholder="Місце" aria-required="true"></textarea>
+                <span  ></span>
+                <input class="submit" type="submit" value="Додати">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script src="~/js/scriptAddPublication.js"></script>
+@*<div class="row">
     <div class="col-md-4">
-        <form id="registerForm" action="AddPublication" method="post">
+        <form id="registerForm" enctype="multipart/form-data" action="AddPublication" method="post">
             <h2>Create a new publication.</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -10,6 +50,11 @@
                 <input asp-for="Image" class="form-control" aria-required="true" />
                 <label asp-for="Image"></label>
                 <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+             <div class="form-floating">
+                <input asp-for="ImageFile" class="form-control" aria-required="true" accept="image/jpg,image/jpeg,image/png" />
+                <label asp-for="ImageFile"></label>
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
             </div>
             <div class="form-floating">
                 <input asp-for="Name" class="form-control"  aria-required="true" />
@@ -35,4 +80,4 @@
 
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Publicate</button>
         </form>
-</div>
+</div>*@

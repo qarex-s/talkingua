@@ -11,7 +11,14 @@
         <div class="head">
             <div class="nick">
                 <div>
-                    <img src="@Model.GetUserAppUtil().Image" alt="Avatar">
+                        @if (Model.GetUserAppUtil().ImageTitle != null)
+                        {
+                            <img src="@($"/UsersAvatars/UserPostBy{Model.GetUserAppUtil().Email}/{Model.GetUserAppUtil().ImageTitle}")" alt="">
+                        }
+                        else
+                        {
+                            <img src="@($"/Img/def_ava.png")" alt="">
+                        }>
                 </div>
                 <p>@@@Model.GetUserAppUtil().Name</p>
             </div>
@@ -53,9 +60,18 @@
                     @foreach (UserPost item in Model.GetUserPostUtil())
                     {
                         <div class="post">
-                            <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
-                                <img src="@item.Image" alt="Post">
-                            </a>
+                            @if (item.ImageTitle != null)
+                            {
+                                <div>
+                                <a href="@Url.Action("GetPublication", "Home", new {Id = item.UserPostId})" class="btn btn-primary">
+                                    <img src="@($"/UsersStaticFiles/UserPostBy{Model.GetUserAppUtil().Email}/{item.ImageTitle}")" alt="Post">
+                                </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <img src="~/Img/error_image.png" alt="Post">
+                            }
                         </div>
                     }
                 }

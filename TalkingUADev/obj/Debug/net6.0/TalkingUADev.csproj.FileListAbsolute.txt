@@ -905,3 +905,5 @@ C:\Users\Erik\Source\Repos\talkingHUB\TalkingUADev\obj\Debug\net6.0\scopedcss\pr
 C:\Users\Erik\Source\Repos\talkingHUB\TalkingUADev\obj\Debug\net6.0\TalkingUADev.csproj.CopyComplete
 C:\Users\Erik\Source\Repos\talkingHUB\TalkingUADev\obj\Debug\net6.0\TalkingUADev.genruntimeconfig.cache
 C:\Users\Erik\Source\Repos\talkingHUB\TalkingUADev\obj\Debug\net6.0\ref\TalkingUADev.dll
+C:\Users\Erik\source\repos\talkingHUB\TalkingUADev\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\Erik\source\repos\talkingHUB\TalkingUADev\bin\Debug\net6.0\xunit.core.dll

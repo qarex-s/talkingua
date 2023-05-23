@@ -11,7 +11,7 @@ namespace TalkingUADev.Models
     public class UserPost
     {
         public Guid UserPostId { get; set; }
-        public string Image { get; set; }
+        public string? Image { get; set; } = null;
         public string Name { get; set; }
         public string Desc { get; set; }
         public string Tags { get; set; }
@@ -23,6 +23,9 @@ namespace TalkingUADev.Models
         public DateTime DateOfCreatingPost { get; set; }= DateTime.Now;
         public List<LikeUser> likes = new List<LikeUser>();
         public List<UserComment> comments = new List<UserComment>();
+        public string? ImageTitle { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
 
 
 

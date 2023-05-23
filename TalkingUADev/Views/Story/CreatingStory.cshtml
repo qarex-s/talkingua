@@ -1,13 +1,38 @@
-﻿<div class="container my-5">
-    <form method="post" action="CreatingStory">
+﻿@{
+    Layout = "_Layout";
+}
+@using TalkingUADev.ViewModels
+@model ModelStory
+@*<div class="container my-5">
+        <form  enctype="multipart/form-data" method="post" action="CreatingStory">
         <div class="form-group">
             <label for="image-url">URL картинки</label>
-            <input type="text" class="form-control" id="image-url" name="Image" placeholder="Enter URL of Image">
+            <input type="file" name="Image" accept="image/jpg,image/jpeg,image/png" aria-required="true" placeholder="Set image" />
         </div>
         <button type="submit" class="btn btn-primary">Add</button>
         <button type="button" class="btn btn-secondary" onclick="cancel()">Cancell</button>
     </form>
+</div>*@
+<link rel="stylesheet" href="~/css/styleAddStory.css">
+<div class="container">
+    <h1>Додати історію</h1>
+    <div class="hr"></div>
+    <form enctype="multipart/form-data" method="post" action="CreatingStory">
+        <div class="input-photo">
+            <label class="input-file">
+                <input type="file" asp-for="ImageFile" accept="image/jpg,image/jpeg,image/png" aria-required="true"/>
+                <span>Виберіть файл</span>
+            </label>
+            <div class="view-photo"></div>
+            <div>
+                <input class="submit" type="submit" value="Додати">
+            </div>
+        </div>
+    </form>
 </div>
+<script src="~/js/jquery-3.6.3Master.min.js"></script>
+<script src="~/js/scriptAddStory.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"</script>
 <script>
     function cancel() {
         document.getElementById("image-url").value = "";
